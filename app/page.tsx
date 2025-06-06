@@ -1,27 +1,9 @@
-import { promises as fs } from "fs"
-import path from "path"
-import Map from "@/components/map"
-import { ThemeToggle } from "@/components/themeToggle"
+import { districts } from "@/data/districts";
+import { streets } from '@/data/streets'
+import Map from "@/components/Map"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-interface Location {
-  id: number
-  name: string
-  type: "museum" | "park" | "shop"
-  lat: number
-  lng: number
-  description: string
-  address: string
-}
-
-async function getLocations(): Promise<Location[]> {
-  const filePath = path.join(process.cwd(), "data", "locations.json")
-  const fileContents = await fs.readFile(filePath, "utf8")
-  return JSON.parse(fileContents)
-}
-
 export default async function Home() {
-  const locations = await getLocations()
 
   return (
     <div className="min-h-screen bg-background">
@@ -45,52 +27,8 @@ export default async function Home() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Map locations={locations} />
+              <Map streets={streets} districts={districts} />
             </CardContent>
-          </Card>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-3">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-semibold text-sm">
-                    {locations.filter((l) => l.type === "museum").length}
-                  </span>
-                </div>
-                Museums
-              </CardTitle>
-              <CardDescription>World-class museums with art, history, and science exhibitions</CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                  <span className="text-green-600 font-semibold text-sm">
-                    {locations.filter((l) => l.type === "park").length}
-                  </span>
-                </div>
-                Parks
-              </CardTitle>
-              <CardDescription>Beautiful green spaces and royal parks for relaxation and recreation</CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                  <span className="text-purple-600 font-semibold text-sm">
-                    {locations.filter((l) => l.type === "shop").length}
-                  </span>
-                </div>
-                Shopping
-              </CardTitle>
-              <CardDescription>From luxury department stores to unique markets and boutiques</CardDescription>
-            </CardHeader>
           </Card>
         </div>
       </div>
