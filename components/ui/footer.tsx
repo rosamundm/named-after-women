@@ -29,13 +29,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/technical" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Technical
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Contact
+                <Link href="/colophon" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Colophon
                 </Link>
               </li>
               <li>
@@ -45,22 +40,6 @@ export function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Newsletter Section
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold">Stay Updated</h3>
-            <p className="text-sm text-muted-foreground">Get the latest updates on new locations and features.</p>
-            <div className="space-y-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-3 py-2 text-sm border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
-              />
-              <button className="w-full px-3 py-2 text-sm bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
-                Subscribe
-              </button>
-            </div>
-          </div> */}
         </div>
 
         {/* Bottom Section */}

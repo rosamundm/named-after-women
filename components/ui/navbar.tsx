@@ -13,9 +13,9 @@ const Navbar: FC = () => {
   // todo: update
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Explore", href: "#map" },
+    { name: "Explore", href: "/map" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "/contact" },
   ]
 
   return (

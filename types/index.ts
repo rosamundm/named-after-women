@@ -23,12 +23,12 @@ export interface Street {
     eponymDateOfDeath?: string;
     eponymPlaceOfBirth?: string;
     eponymPlaceOfDeath?: string;
-    eponymDescription?: string;
+    eponymDescription: string | React.JSX.Element | React.JSX.Element[];  // used because of html-react-parse
     imagePath?: string;
     tags?: Tag['slug'][];
 }
 
 export interface MapProps {
-  districts: District[];
+  districts?: District[];
   streets: Street[];
 }

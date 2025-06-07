@@ -57,8 +57,11 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
                       <h3 className="font-semibold text-sm">{street.name}</h3>
                     </div>
                   </div>
+                  <p className="text-xs text-bold text-gray-600">
+                    {street.eponymDateOfBirth} ({street.eponymPlaceOfBirth}) - {street.eponymDateOfDeath} ({street.eponymPlaceOfDeath})
+                  </p>
                   <p className="text-xs text-gray-600 mb-2">{street.eponymDescription}</p>
-                  <p className="text-xs text-gray-500">{street.imagePath}</p>
+                  <img src={street.imagePath}></img>
                 </div>
               </Popup>
             </Marker>

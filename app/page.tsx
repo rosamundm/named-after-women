@@ -1,10 +1,10 @@
+import { FC } from 'react';
 import { districts } from "@/data/districts";
 import { streets } from '@/data/streets'
 import Map from "@/components/map"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default async function Home() {
-
+const Home: FC = () => {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
@@ -34,4 +34,6 @@ export default async function Home() {
       </div>
     </div>
   )
-}
+};
+
+export default Home;

@@ -5,12 +5,16 @@ const AboutPage: FC = () => {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto max-w-4xl px-4 py-16">
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">About</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            About
+          </h1>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </header>
 
         <main className="space-y-8">
-          <h2 className="text-xl font-bold mb-4">Thank you for visiting this site!</h2>
+          <h2 className="text-xl font-bold mb-4">
+            Hello and thank you for visiting this site!
+          </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             My name is Rosamund. I'm a software developer with a background in translation and writing, originally from the UK. I've always been obsessed with maps and streets,
             even designing my own towns when I was a kid. Since moving to Berlin in 2014, this has reached a whole new level. 
@@ -51,7 +55,7 @@ const AboutPage: FC = () => {
             </li>
           </ul>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            You can find out more about how I developed the project <a href="/technical"><u>here</u></a>. Questions about the contents are answered <a href="/faq"><u>here</u></a>.
+            You can find out more about how I developed the project <a href="/colophon"><u>here</u></a>. Questions about the contents are answered <a href="/faq"><u>here</u></a>.
           </p>
         </main>
       </div>

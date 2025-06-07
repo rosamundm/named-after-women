@@ -1,7 +1,7 @@
-const mapSnakeCaseToCamelCase = (
-    listInSnakeCase: any
-) => {
-    listInSnakeCase.map((item: any) => ({
-        itemInCamel: item.item_in_camel
-    })) || []
+export const getImpressumAddress = (): string[] | undefined => {
+    if (process.env.IMPRESSUM_ADDRESS) {
+        return process.env.IMPRESSUM_ADDRESS.split(",")
+    }
 }
+
+export const getImpressumEmail = (): string | undefined => process.env.IMPRESSUM_EMAIL
