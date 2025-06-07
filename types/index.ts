@@ -4,6 +4,7 @@ export interface Tag {
     slug: string;
 }
 
+// todo: convert to enum?
 export interface District {
     id: number;
     name: string;

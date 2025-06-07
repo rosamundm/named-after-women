@@ -1,10 +1,10 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { FC, useEffect, useState } from "react"
 import dynamic from "next/dynamic"
 import "leaflet/dist/leaflet.css";
-import { District, MapProps, Street } from "@/types"
-import { greenMarker, redMarker } from "./ui/mapMarkers";
+import { MapProps } from "@/types"
+import { greenMarker, redMarker } from "./ui/map-markers";
 
 // Dynamically import the map to avoid SSR issues
 const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), { ssr: false })
@@ -12,7 +12,8 @@ const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLa
 const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), { ssr: false })
 const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { ssr: false })
 
-export default function Map({ districts, streets }: MapProps) {
+const Map: FC<MapProps> = ({ streets }: MapProps) => {
+
   const [isClient, setIsClient] = useState(false)
 
   const mapCenter = [52.5170124, 13.389094]
@@ -66,4 +67,6 @@ export default function Map({ districts, streets }: MapProps) {
       </div>
     </div>
   )
-}
+};
+
+export default Map;

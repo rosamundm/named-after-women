@@ -19,55 +19,28 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Explore Section */}
-          <div className="space-y-4">
-            <h3 className="text-sm font-semibold">Explore</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="#museums" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Museums
-                </Link>
-              </li>
-              <li>
-                <Link href="#parks" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Parks
-                </Link>
-              </li>
-              <li>
-                <Link href="#shopping" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Shopping
-                </Link>
-              </li>
-              <li>
-                <Link href="#map" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Interactive Map
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Resources Section */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-                  About Us
+                <Link href="/faq" className="text-muted-foreground hover:text-foreground transition-colors">
+                  FAQ
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/technical" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Technical
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="#privacy" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="#terms" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Terms of Service
+                <Link href="/impressum" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Impressum & Terms of Service 🇩🇪
                 </Link>
               </li>
             </ul>

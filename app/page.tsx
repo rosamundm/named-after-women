@@ -1,6 +1,6 @@
 import { districts } from "@/data/districts";
 import { streets } from '@/data/streets'
-import Map from "@/components/Map"
+import Map from "@/components/map"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default async function Home() {

@@ -1,19 +1,20 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { FC, useState } from "react"
 import { ThemeToggle } from "@/components/themeToggle"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { MapPin, Menu } from "lucide-react"
 
-export function Navbar() {
+const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
+  // todo: update
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Explore", href: "#map" },
-    { name: "About", href: "#about" },
+    { name: "About", href: "/about" },
     { name: "Contact", href: "#contact" },
   ]
 
@@ -21,11 +22,6 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <MapPin className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">named after women</span>
-          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
@@ -39,8 +35,6 @@ export function Navbar() {
               </Link>
             ))}
           </div>
-
-          {/* Desktop Theme Toggle */}
           <div className="hidden md:flex">
             <ThemeToggle />
           </div>
@@ -88,4 +82,6 @@ export function Navbar() {
       </div>
     </nav>
   )
-}
+};
+
+export default Navbar;
