@@ -1,15 +1,7 @@
 import { FC } from 'react';
-import { promises as fs } from 'fs';
-import path from 'path';
 import Map from '@/components/map';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Street } from '@/types';
-
-const getStreets = async (): Promise<Street[]> => {
-  const filePath = path.join(process.cwd(), 'data', 'streets.json')
-  const fileContents = await fs.readFile(filePath, 'utf8')
-  return JSON.parse(fileContents)
-}
+import { getStreets } from '@/hooks/helpers';
 
 const Home: FC = async () => {
   const streets = await getStreets()
