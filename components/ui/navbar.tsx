@@ -10,12 +10,9 @@ import { MapPin, Menu } from "lucide-react"
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  // todo: update
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Explore", href: "/map" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
   ]
 
   return (

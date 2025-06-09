@@ -19,12 +19,12 @@ export interface Street {
     geocode: [number, number];
     entryComplete: boolean;
     eponymName: string;
-    eponymDateOfBirth?: string;
-    eponymDateOfDeath?: string;
-    eponymPlaceOfBirth?: string;
-    eponymPlaceOfDeath?: string;
-    eponymDescription: string | React.JSX.Element | React.JSX.Element[];  // used because of html-react-parse
-    imagePath?: string;
+    eponymDateOfBirth?: string | null;
+    eponymDateOfDeath?: string | null;
+    eponymPlaceOfBirth?: string | null;
+    eponymPlaceOfDeath?: string | null;
+    eponymDescription?: string | React.JSX.Element | React.JSX.Element[];  // used because of html-react-parse
+    imagePath?: string | null;
     tags?: Tag['slug'][];
 }
 

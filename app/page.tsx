@@ -1,10 +1,20 @@
 import { FC } from 'react';
-import { districts } from "@/data/districts";
-import { streets } from '@/data/streets'
-import Map from "@/components/map"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { promises as fs } from 'fs';
+import path from 'path';
+// import { streets } from '@/data/streets'
+import Map from '@/components/map';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Street } from '@/types';
 
-const Home: FC = () => {
+const getStreets = async (): Promise<Street[]> => {
+  const filePath = path.join(process.cwd(), 'data', 'streets.json')
+  const fileContents = await fs.readFile(filePath, 'utf8')
+  return JSON.parse(fileContents)
+}
+
+const Home: FC = async () => {
+  const streets = await getStreets()
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
@@ -27,7 +37,7 @@ const Home: FC = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Map streets={streets} districts={districts} />
+              <Map streets={streets} />
             </CardContent>
           </Card>
         </div>
