@@ -1,12 +1,11 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import { Street } from '@/types';
+import { greenMarker, redMarker } from "@/components/ui/map-markers";
 
-export const getStreets = async (): Promise<Street[]> => {
-  const filePath = path.join(process.cwd(), 'data', 'streets.json')
-  const fileContents = await fs.readFile(filePath, 'utf8')
-  return JSON.parse(fileContents)
-}
+export const getMarker = (street: Street) => {
+    let marker = greenMarker;
+    if (!street.imagePath) marker = redMarker
+    return marker
+  }
 
 export const getImpressumAddress = (): string[] | undefined => {
     if (process.env.IMPRESSUM_ADDRESS) {

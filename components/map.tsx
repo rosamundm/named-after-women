@@ -5,19 +5,18 @@ import { FC, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import parse from 'html-react-parser';
 import 'leaflet/dist/leaflet.css';
+
 import { MapProps } from '@/types';
-import { greenMarker, redMarker } from "./ui/map-markers";
+import { getMarker } from '@/hooks/helpers';
 
 // Dynamically import the map to avoid SSR issues
-const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), { ssr: false })
-const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), { ssr: false })
-const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), { ssr: false })
-const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { ssr: false })
+const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), { ssr: true })
+const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), { ssr: true })
+const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), { ssr: true })
+const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { ssr: true })
 
 const Map: FC<MapProps> = ({ streets }: MapProps) => {
-
   const [isClient, setIsClient] = useState(false)
-
   const mapDimensions = { height: "100%", width: "100%" }
   const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
   const attribution = '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>'
@@ -57,7 +56,7 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
             <Marker 
               key={i}
               position={street.geocode}
-              icon={street.imagePath ? greenMarker : redMarker}
+              icon={getMarker(street)}
             >
               <Popup>
                 <div className="p-2 min-w-[200px]">
