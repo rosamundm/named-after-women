@@ -1,5 +1,3 @@
-import { LatLngExpression} from 'leaflet';
-
 export interface Tag {
     id: number;
     name: string;
@@ -18,7 +16,7 @@ export interface Street {
     name: string;
     slug: string;
     district: District['slug'];
-    geocode: LatLngExpression | [number, number] | undefined;
+    geocode:[number, number];
     entryComplete: boolean;
     eponymName: string;
     eponymDateOfBirth?: string | null;

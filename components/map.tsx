@@ -1,10 +1,11 @@
 "use client"
 
-import { FC, useEffect, useState } from "react"
-import dynamic from "next/dynamic"
+import { FC, useEffect, useState } from 'react';
+
+import dynamic from 'next/dynamic';
 import parse from 'html-react-parser';
-import "leaflet/dist/leaflet.css";
-import { MapProps } from "@/types"
+import 'leaflet/dist/leaflet.css';
+import { MapProps } from '@/types';
 import { greenMarker, redMarker } from "./ui/map-markers";
 
 // Dynamically import the map to avoid SSR issues
@@ -15,27 +16,26 @@ const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { 
 
 const Map: FC<MapProps> = ({ streets }: MapProps) => {
 
-  // const [isClient, setIsClient] = useState(false)
+  const [isClient, setIsClient] = useState(false)
 
-  const mapCenter = [52.5170124, 13.389094]
   const mapDimensions = { height: "100%", width: "100%" }
   const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
   const attribution = '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>'
 
-  // useEffect(() => {
-  //   setIsClient(true)
-  // }, [])
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
-  // if (!isClient) {
-  //   return (
-  //     <div className="w-full h-[600px] bg-gray-100 rounded-lg flex items-center justify-center">
-  //       <div className="text-center">
-  //         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 mx-auto mb-2"></div>
-  //         <p className="text-gray-600">Loading map...</p>
-  //       </div>
-  //     </div>
-  //   )
-  // }
+  if (!isClient) {
+    return (
+      <div className="w-full h-[600px] bg-gray-100 rounded-lg flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 mx-auto mb-2"></div>
+          <p className="text-gray-600">Loading map...</p>
+        </div>
+      </div>
+    )
+  }
 
   if (!streets) {
     return (
@@ -51,9 +51,8 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
   return (
     <div className="space-y-6">
       <div className="w-full h-[600px] rounded-lg overflow-hidden border border-border">
-        <MapContainer center={mapCenter} zoom={11} style={mapDimensions}>
+        <MapContainer center={[52.5170124, 13.389094]} zoom={11} style={mapDimensions}>
           <TileLayer attribution={attribution} url={url} />
-
           {streets.map((street, i) => (
             <Marker 
               key={i}

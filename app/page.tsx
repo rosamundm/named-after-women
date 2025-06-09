@@ -23,8 +23,7 @@ const Home: FC = async () => {
             <CardHeader>
               <CardTitle>Interactive Map</CardTitle>
               <CardDescription>
-                Click on markers to learn more about each location. Use the filter buttons to show specific types of
-                places.
+                Click on markers to learn more about each street and the person it's named after.
               </CardDescription>
             </CardHeader>
             <CardContent>

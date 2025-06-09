@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { Street } from "@/types"
+import { Street } from '@/types';
 
 export const getStreets = async (): Promise<Street[]> => {
   const filePath = path.join(process.cwd(), 'data', 'streets.json')
