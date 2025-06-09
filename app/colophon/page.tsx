@@ -54,7 +54,7 @@ const ColophonPage: FC = () => {
             feel exhausted just thinking about Named After Women.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            So in May 2025, I made the decision to turn the site static. This involved some initial overhead, but it's a massive relief in terms of cost, performance, 
+            So in May 2025, I made the decision to turn the site static. This involves some initial overhead, but it's a massive relief in terms of cost, performance, 
             maintainability, and security. It is a bit of a shame to move the project away from my beloved Django, but there are plenty of other opportunities to use it!
           </p>
           <h2 className="text-xl font-bold mb-4">
@@ -62,8 +62,8 @@ const ColophonPage: FC = () => {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             I used <a href="https://v0.dev/"><u>v0</u></a> to bootstrap the basic layout of the new site to save myself the headache of designing something to 
-            my specifications from scratch. I then made a whole lot of corrections and customisations to the code myself (e.g. swapping out the generated map component for the one I'd built for the previous site).
-            My overall stance on generative AI remains staunchly critical and I have every intention of keeping it out of the rest of the project.
+            my specifications from scratch & being able to focus my energies on other aspects. I then made a whole lot of corrections and customisations to the code myself (e.g. swapping
+            out the generated map component for the one I'd built for the previous site). My overall stance on generative AI remains staunchly critical and I have every intention of keeping it out of the rest of the project.
           </p>
 
         </main>

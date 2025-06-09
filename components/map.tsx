@@ -2,6 +2,7 @@
 
 import { FC, useEffect, useState } from "react"
 import dynamic from "next/dynamic"
+import parse from 'html-react-parser';
 import "leaflet/dist/leaflet.css";
 import { MapProps } from "@/types"
 import { greenMarker, redMarker } from "./ui/map-markers";
@@ -48,7 +49,7 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
             <Marker 
               key={street.id}
               position={street.geocode}
-              icon={street.entryComplete ? greenMarker : redMarker}
+              icon={street.imagePath ? greenMarker : redMarker}
             >
               <Popup>
                 <div className="p-2 min-w-[200px]">
@@ -57,11 +58,19 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
                       <h3 className="font-semibold text-sm">{street.name}</h3>
                     </div>
                   </div>
-                  <p className="text-xs text-bold text-gray-600">
-                    {street.eponymDateOfBirth} ({street.eponymPlaceOfBirth}) - {street.eponymDateOfDeath} ({street.eponymPlaceOfDeath})
-                  </p>
-                  <p className="text-xs text-gray-600 mb-2">{street.eponymDescription}</p>
-                  <img src={street.imagePath}></img>
+                  {!street.eponymDateOfDeath ?  (
+                    <p className="text-xs text-bold text-gray-600">
+                      Named after {street.eponymName}, born {street.eponymDateOfBirth} in ({street.eponymPlaceOfBirth})
+                    </p>
+                  ) : (
+                    <p className="text-xs text-bold text-gray-600">
+                      Named after {street.eponymName}, {street.eponymDateOfBirth} ({street.eponymPlaceOfBirth}) - {street.eponymDateOfDeath} ({street.eponymPlaceOfDeath})
+                    </p>
+                  )}
+                  {street.eponymDescription && (
+                    <p className="text-xs text-gray-600 mb-2">{parse(String(street.eponymDescription))}</p>
+                  )}
+                  {street.imagePath && <img src={street.imagePath}></img>}
                 </div>
               </Popup>
             </Marker>
