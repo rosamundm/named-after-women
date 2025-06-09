@@ -7,7 +7,7 @@ import parse from 'html-react-parser';
 import 'leaflet/dist/leaflet.css';
 
 import { MapProps } from '@/types';
-import { getMarker } from '@/hooks/helpers';
+// import { getMarker } from '@/hooks/helpers';
 
 // Dynamically import the map to avoid SSR issues
 const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), { ssr: true })
@@ -56,7 +56,7 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
             <Marker 
               key={i}
               position={street.geocode}
-              icon={getMarker(street)}
+              // icon={getMarker(street)}
             >
               <Popup>
                 <div className="p-2 min-w-[200px]">
