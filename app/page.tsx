@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import { promises as fs } from 'fs';
 import path from 'path';
-// import { streets } from '@/data/streets'
 import Map from '@/components/map';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Street } from '@/types';

@@ -20,9 +20,7 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
   const mapCenter = [52.5170124, 13.389094]
   const mapDimensions = { height: "100%", width: "100%" }
   const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-  const attribution =
-    '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a> | \
-                        Markers: Prosymbols Premium (Flaticon)';
+  const attribution = '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>'
 
   useEffect(() => {
     setIsClient(true)
