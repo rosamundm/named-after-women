@@ -62,7 +62,7 @@ const ColophonPage: FC = () => {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             I used <a href="https://v0.dev/"><u>v0</u></a> to bootstrap the basic layout of the new site to save myself the headache of designing something to 
-            my specifications from scratch & being able to focus my energies on other aspects. I then made a whole lot of corrections and customisations to the code myself (e.g. swapping
+            my specifications from scratch, enabling me to focus my energies on other aspects. I then made a whole lot of corrections and customisations to the code myself (e.g. swapping
             out the generated map component for the one I'd built for the previous site). My overall stance on generative AI remains staunchly critical and I have every intention of keeping it out of the rest of the project.
           </p>
 
