@@ -6,14 +6,18 @@ import dynamic from 'next/dynamic';
 import parse from 'html-react-parser';
 import 'leaflet/dist/leaflet.css';
 
-import { MapProps } from '@/types';
-// import { getMarker } from '@/hooks/helpers';
+import { MapProps, Street } from '@/types';
 
 // Dynamically import the map to avoid SSR issues
 const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), { ssr: true })
 const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), { ssr: true })
 const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), { ssr: true })
 const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { ssr: true })
+
+const checkAllEponymValuesTrue = (street: Street, fn = Boolean) => {
+  const arr = [street.eponymDateOfBirth, street.eponymPlaceOfBirth, street.eponymDateOfDeath, street.eponymPlaceOfDeath]
+  return arr.every(fn)
+}
 
 const Map: FC<MapProps> = ({ streets }: MapProps) => {
   const [isClient, setIsClient] = useState(false)
@@ -65,18 +69,23 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
                       <h3 className="font-semibold text-sm">{street.name}</h3>
                     </div>
                   </div>
-                  {!street.eponymDateOfDeath ?  (
+                  {/* person is still living (only in 2 cases, I think!) */}
+                  {!street.eponymDateOfDeath && !street.eponymPlaceOfDeath && (
                     <p className="text-xs text-bold text-gray-600">
                       Named after {street.eponymName}, born {street.eponymDateOfBirth} in ({street.eponymPlaceOfBirth})
                     </p>
-                  ) : (
+                  )}
+                  {/* happy path */}
+                  {checkAllEponymValuesTrue(street) && (
                     <p className="text-xs text-bold text-gray-600">
                       Named after {street.eponymName}, {street.eponymDateOfBirth} ({street.eponymPlaceOfBirth}) - {street.eponymDateOfDeath} ({street.eponymPlaceOfDeath})
                     </p>
                   )}
+                  {/* description is available */}
                   {street.eponymDescription && (
                     <p className="text-xs text-gray-600 mb-2">{parse(String(street.eponymDescription))}</p>
                   )}
+                  {/* image is available */}
                   {street.imagePath && <img src={street.imagePath}></img>}
                 </div>
               </Popup>
