@@ -447,7 +447,7 @@
         "eponymDateOfBirth": "04.02.1897",
         "eponymDateOfDeath": "20.10.1989",
         "eponymName": "Katharina Heinroth",
-        "eponymPlaceOfBirth": "Wroc\u0142aw, Poland",
+        "eponymPlaceOfBirth": "Wrocław, Poland",
         "eponymPlaceOfDeath": "Berlin, Germany",
         "geocode": [
             52.507952068672516,
@@ -498,7 +498,7 @@
         "eponymDateOfBirth": "28.11.1898",
         "eponymDateOfDeath": "21.01.1993",
         "eponymName": "Lotte Laserstein",
-        "eponymPlaceOfBirth": "Pas\u0142\u0119k, Poland",
+        "eponymPlaceOfBirth": "Pasłęk, Poland",
         "eponymPlaceOfDeath": "Kalmar, Sweden",
         "geocode": [
             52.47541271003547,
@@ -818,11 +818,11 @@
     {
         "district": "Lichtenberg",
         "entryComplete": false,
-        "eponymDateOfBirth": null,
-        "eponymDateOfDeath": null,
+        "eponymDateOfBirth": "22.09.1923 & 06.03.1921",
+        "eponymDateOfDeath": "15.10.1943 & 04.03.1943",
         "eponymName": "Alice Hirsch & Hella Hirsch",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "Poznań, Poland",
+        "eponymPlaceOfDeath": "Auschwitz, Poland & Berlin, Germany",
         "geocode": [
             52.4966673,
             13.4796241
@@ -838,8 +838,8 @@
         "eponymDateOfBirth": "05.05.1888",
         "eponymDateOfDeath": "20.06.1954",
         "eponymName": "Anna Bruseberg",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
         "geocode": [
             52.6136778540374,
             13.430999962661604
@@ -1212,7 +1212,7 @@
         "eponymDateOfBirth": "06.11.1902",
         "eponymDateOfDeath": "11.08.1943",
         "eponymName": "Ella Trebe",
-        "eponymPlaceOfBirth": null,
+        "eponymPlaceOfBirth": "Berlin, Germany",
         "eponymPlaceOfDeath": "Sachsenhausen, Germany",
         "geocode": [
             52.5241929,
@@ -1397,7 +1397,7 @@
         "district": "Mitte",
         "entryComplete": false,
         "eponymDateOfBirth": "23.12.1895",
-        "eponymDateOfDeath": null,
+        "eponymDateOfDeath": "29.11.1942",
         "eponymName": "Erna Samuel",
         "eponymPlaceOfBirth": "Trebbin, Germany",
         "eponymPlaceOfDeath": "Auschwitz, Poland",
@@ -1583,11 +1583,11 @@
     {
         "district": "Tempelhof-Schöneberg",
         "entryComplete": false,
-        "eponymDateOfBirth": null,
-        "eponymDateOfDeath": null,
+        "eponymDateOfBirth": "1906",
+        "eponymDateOfDeath": "unknown",
         "eponymName": "Hertha Block",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
         "geocode": [
             52.48078311678746,
             13.370987044047554
@@ -1600,11 +1600,11 @@
     {
         "district": "Mitte",
         "entryComplete": false,
-        "eponymDateOfBirth": null,
-        "eponymDateOfDeath": null,
+        "eponymDateOfBirth": "28.09.1893",
+        "eponymDateOfDeath": "22.03.1973",
         "eponymName": "Hilda Geiringer",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "Vienna, Austria",
+        "eponymPlaceOfDeath": "Santa Barbara, USA",
         "geocode": [
             52.52722379128499,
             13.372755951318759
@@ -1651,11 +1651,11 @@
     {
         "district": "Mitte",
         "entryComplete": false,
-        "eponymDateOfBirth": null,
-        "eponymDateOfDeath": null,
+        "eponymDateOfBirth": "1832",
+        "eponymDateOfDeath": "1904",
         "eponymName": "Ida von Arnim",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
         "geocode": [
             52.5350765,
             13.3712004
@@ -1688,8 +1688,8 @@
         "eponymDateOfBirth": "13.02.1926",
         "eponymDateOfDeath": "08.09.1999",
         "eponymName": "Inge Beisheim",
-        "eponymPlaceOfBirth": "(unknown)",
-        "eponymPlaceOfDeath": "(unknown)",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
         "geocode": [
             52.5107952,
             13.3736255
@@ -1739,8 +1739,8 @@
         "eponymDateOfBirth": "20.07.1896",
         "eponymDateOfDeath": "20.06.1988",
         "eponymName": "Johanna Hofer",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "Berlin, Germany",
+        "eponymPlaceOfDeath": "Munich, Germany",
         "geocode": [
             52.477159,
             13.5310478
@@ -1753,11 +1753,11 @@
     {
         "district": "Steglitz-Zehlendorf",
         "entryComplete": false,
-        "eponymDateOfBirth": null,
-        "eponymDateOfDeath": null,
+        "eponymDateOfBirth": "11.01.1793",
+        "eponymDateOfDeath": "12.01.1842",
         "eponymName": "Johanna Stegen",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "Lüneburg, Germany",
+        "eponymPlaceOfDeath": "Berlin, Germany",
         "geocode": [
             52.447056257163545,
             13.33113591016005
@@ -1807,8 +1807,8 @@
         "eponymDateOfBirth": "17.03.1904",
         "eponymDateOfDeath": "07.11.1999",
         "eponymName": "Kitty Kuse",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "Berlin, Germany",
+        "eponymPlaceOfDeath": "Berlin, Germany",
         "geocode": [
             52.4812461903814,
             13.36371570197889
@@ -1821,11 +1821,11 @@
     {
         "district": "Mitte",
         "entryComplete": false,
-        "eponymDateOfBirth": null,
-        "eponymDateOfDeath": null,
+        "eponymDateOfBirth": "06.03.1911",
+        "eponymDateOfDeath": "26.08.1995",
         "eponymName": "Klara Franke",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "Berlin, Germany",
+        "eponymPlaceOfDeath": "Berlin, Germany",
         "geocode": [
             52.531682,
             13.360537
@@ -2148,7 +2148,7 @@
         "eponymDateOfDeath": "11.03.2002",
         "eponymName": "Marion Gräfin Dönhoff",
         "eponymPlaceOfBirth": "Kaliningrad, Russia",
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfDeath": "Friesenhagen, Germany",
         "geocode": [
             52.5108518,
             13.395781
@@ -2178,11 +2178,11 @@
     {
         "district": "Pankow",
         "entryComplete": false,
-        "eponymDateOfBirth": null,
-        "eponymDateOfDeath": null,
+        "eponymDateOfBirth": "21.03.1860",
+        "eponymDateOfDeath": "10.01.1917",
         "eponymName": "Martha Fontane",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "Berlin, Germany",
+        "eponymPlaceOfDeath": "Waren (Müritz), Germany",
         "geocode": [
             52.61510931560068,
             13.425295406989385
@@ -2229,11 +2229,11 @@
     {
         "district": "Steglitz-Zehlendorf",
         "entryComplete": false,
-        "eponymDateOfBirth": null,
-        "eponymDateOfDeath": null,
+        "eponymDateOfBirth": "1877",
+        "eponymDateOfDeath": "1927",
         "eponymName": "Anna Mochow",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "Kirchhain, Germany",
+        "eponymPlaceOfDeath": "unknown",
         "geocode": [
             52.4280599045019,
             13.219882232018767
@@ -2284,7 +2284,7 @@
         "eponymDateOfDeath": "30.06.1942",
         "eponymName": "Paula Fürst",
         "eponymPlaceOfBirth": "Głogów, Poland",
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfDeath": "unknown",
         "geocode": [
             52.4954097,
             13.480754
@@ -2450,11 +2450,11 @@
     {
         "district": "Mitte",
         "entryComplete": false,
-        "eponymDateOfBirth": null,
-        "eponymDateOfDeath": null,
+        "eponymDateOfBirth": "early 19th century",
+        "eponymDateOfDeath": "unknown",
         "eponymName": "Wilhelmine Gemberg",
-        "eponymPlaceOfBirth": null,
-        "eponymPlaceOfDeath": null,
+        "eponymPlaceOfBirth": "Berlin, Germany",
+        "eponymPlaceOfDeath": "Brandenburg an der Havel, Germany",
         "geocode": [
             52.509856,
             13.4215349
