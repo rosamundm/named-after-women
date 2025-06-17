@@ -43,7 +43,7 @@ const AboutPage: FC = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             Some other key words and concepts I have in mind with this project:
           </p>
-          <ul>
+          <ul className="list-disc list-inside">
             <li>
                 <a href="https://en.wikipedia.org/wiki/Digital_humanities"><u>Digital humanities</u></a>
             </li>

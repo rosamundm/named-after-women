@@ -19,7 +19,7 @@ const ColophonPage: FC = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             I released the site for the first time in May 2023 after ideating and building for about a year, using the following:
           </p>
-          <ul>
+          <ul className="list-disc list-inside">
             <li>
                 Backend built with <a href="https://www.djangoproject.com/"><u>Django</u></a> and <a href="https://www.django-rest-framework.org/"><u>Django REST Framework</u></a>, deployed on <a href="https://eu.pythonanywhere.com/">PythonAnywhere</a>;
             </li>
@@ -30,7 +30,7 @@ const ColophonPage: FC = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             I was essentially using Django as a CMS to enter and manage the street data — which there was a lot of. Here's a rough sketch of my process:
           </p>
-          <ul>
+          <ul className="list-disc list-inside">
             <li>
                 Use a combination of a custom web scraper and manual research to identify the relevant streets, women linked to them, and core information such as location;
             </li>
