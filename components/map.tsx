@@ -54,13 +54,12 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
   return (
     <div className="space-y-6">
       <div className="w-full h-[600px] rounded-lg overflow-hidden border border-border">
-        <MapContainer center={[52.5170124, 13.389094]} zoom={11} style={mapDimensions}>
+        <MapContainer className="z-0" center={[52.5170124, 13.389094]} zoom={11} style={mapDimensions}>
           <TileLayer attribution={attribution} url={url} />
           {streets.map((street, i) => (
             <Marker 
               key={i}
               position={street.geocode}
-              // icon={getMarker(street)}
             >
               <Popup>
                 <div className="p-2 min-w-[200px]">
