@@ -1,9 +1,9 @@
 import type React from "react"
+import { FC } from 'react';
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-// import { ThemeProvider } from "@/components/themeProvider"
 import "./globals.css"
-import { Footer } from "@/components/ui/footer"
+import Footer from "@/components/ui/footer"
 import Navbar from "@/components/ui/navbar"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -13,11 +13,7 @@ export const metadata: Metadata = {
   description: "mapping out women's history in berlin",
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const RootLayout: FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html>
       <head>
@@ -29,14 +25,14 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange> */}
           <div className="flex flex-col min-h-screen">
             <Navbar />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
-        {/* </ThemeProvider> */}
       </body>
     </html>
   )
 }
+
+export default RootLayout;
