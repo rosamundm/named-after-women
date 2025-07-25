@@ -2463,5 +2463,993 @@
         "imagePath": "https://res.cloudinary.com/dihfichjz/image/upload/v1676056995/street_project/signs/wilhelmine_gemberg_weg_mvhda4.jpg",
         "name": "Wilhelmine-Gemberg-Weg",
         "slug": "wilhelmine-gemberg-weg"
-    }
+    },
+    {
+        "district": "Pankow",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Martha Fontane",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.614790046410796,
+            13.425955648479986
+        ],
+        "externalId": 145,
+        "imagePath": "",
+        "name": "Martha-Fontane-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Adelheid Poninska",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.5276735784498,
+		13.14130804925327
+        ],
+        "externalId": 146,
+        "imagePath": "",
+        "name": "Adelheid-Poninska-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Käthe Heinemann",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.52766372785977,
+            13.143081026830487
+        ],
+        "externalId": 147,
+        "imagePath": "",
+        "name": "Käthe-Heinemann-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Erna Sack",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.52792476807589,
+	      13.141356623982444
+        ],
+        "externalId": 148,
+        "imagePath": "",
+        "name": "Erna-Sack-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Amelie Beese",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.467667538407916,
+		13.128497639910009
+        ],
+        "externalId": 149,
+        "imagePath": "",
+        "name": "Amelie-Beese-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Käthe Paulus",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.46883434406815,
+            13.129518399583732
+        ],
+        "externalId": 150,
+        "imagePath": "",
+        "name": "Käthe-Paulus-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Thea Rasche",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.46921668828218,
+            13.130281397079491
+        ],
+        "externalId": 151,
+        "imagePath": "",
+        "name": "Thea-Rasche-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Amelia Earhart",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.47086597819814,
+            13.128693870031862
+        ],
+        "externalId": 152,
+        "imagePath": "",
+        "name": "Amelia-Earhart-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Marga von Etzdorf",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.47108337998571,
+            13.127389390442339
+        ],
+        "externalId": 153,
+        "imagePath": "",
+        "name": "Marga-von-Etzdorf-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Paula Hirschfeld",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.545430092740915,
+            13.21028175204238
+        ],
+        "externalId": 154,
+        "imagePath": "",
+        "name": "Paula-Hirschfeld-Steig",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Rosa Reinglass",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.545890488607874,
+            13.20997718387847
+        ],
+        "externalId": 155,
+        "imagePath": "",
+        "name": "Rosa-Reinglass-Steig",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Frieda Arnheim",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.54626662866063,
+            13.211508929316905
+        ],
+        "externalId": 156,
+        "imagePath": "",
+        "name": "Frieda-Arnheim-Promenade",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Elisabeth Flickenschildt",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.543416864771,
+            13.227107946336686
+        ],
+        "externalId": 157,
+        "imagePath": "",
+        "name": "Elisabeth-Flickenschildt-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Elsa Wagner",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.54442336931039,
+            13.228273697102383
+        ],
+        "externalId": 158,
+        "imagePath": "",
+        "name": "Elsa-Wagner-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Ruth Stephan",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.544663042149864,
+            13.227118252590166
+        ],
+        "externalId": 159,
+        "imagePath": "",
+        "name": "Ruth-Stephan-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Therese Giehse",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.54555635664697,
+		13.22625838690795
+        ],
+        "externalId": 160,
+        "imagePath": "",
+        "name": "Therese-Giehse-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Olga Tschechowa",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.545884359649385,
+		13.226812828024732
+        ],
+        "externalId": 161,
+        "imagePath": "",
+        "name": "Olga-Tschechowa-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Romy Schneider",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.54557354614639,
+		13.224989448549906
+        ],
+        "externalId": 162,
+        "imagePath": "",
+        "name": "Romy-Schneider-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Spandau",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Lilli Palmer",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.54619097081341,
+ 		13.224440568929085
+        ],
+        "externalId": 163,
+        "imagePath": "",
+        "name": "Lilli-Palmer-Promenade",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Elsa Rendschmidt",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.51226849989244,
+		13.226196474346535
+        ],
+        "externalId": 164,
+        "imagePath": "",
+        "name": "Elsa-Rendschmidt-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "unknown",
+        "eponymDateOfDeath": "unknown",
+        "eponymName": "Grethe Weiser",
+        "eponymPlaceOfBirth": "unknown",
+        "eponymPlaceOfDeath": "unknown",
+        "geocode": [
+            52.50538391428134,
+		13.239437087772176
+        ],
+        "externalId": 165,
+        "imagePath": "",
+        "name": "Grethe-Weiser-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "13.11.1801",
+        "eponymDateOfDeath": "14.12.1873",
+        "eponymName": "Queen Elisabeth of Prussia",
+        "eponymPlaceOfBirth": "Munich, Germany",
+        "eponymPlaceOfDeath": "Dresden, Germany",
+        "geocode": [
+            52.514700269506825,
+		13.281122942953107
+        ],
+        "externalId": 166,
+        "imagePath": "",
+        "name": "Königin-Elisabeth-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Kläre Bloch",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.51331086282802,
+		13.295046939049437
+        ],
+        "externalId": 167,
+        "imagePath": "",
+        "name": "Kläre-Bloch-Platz",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "30.10.1668",
+        "eponymDateOfDeath": "01.02.1705",
+        "eponymName": "Sophia Charlotte of Hanover",
+        "eponymPlaceOfBirth": "Hanover, Germany",
+        "eponymPlaceOfDeath": "Hanover, Germany",
+        "geocode": [
+            52.511415669072136,
+		13.296623976671844
+        ],
+        "externalId": 168,
+        "imagePath": "",
+        "name": "Sophie-Charlotte-Platz",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Hilde Ephraim",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.49282229761194,
+		13.272705578370001
+        ],
+        "externalId": 169,
+        "imagePath": "",
+        "name": "Hilde-Ephraim-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Agathe Lasch",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.4977493882918,
+		13.296528179931967
+        ],
+        "externalId": 170,
+        "imagePath": "",
+        "name": "Agathe-Lasch-Platz",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "10.08.1549",
+        "eponymDateOfDeath": "30.09.1602",
+        "eponymName": "Katharina of Brandenburg-Küstrin",
+        "eponymPlaceOfBirth": "Kostrzyn nad Odrą, Poland",
+        "eponymPlaceOfDeath": "Cölln (Berlin), Germany",
+        "geocode": [
+            52.499008133347644,
+		13.292528555269014
+        ],
+        "externalId": 171,
+        "imagePath": "",
+        "name": "Katharinenstraße",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "22.10.1858",
+        "eponymDateOfDeath": "11.04.1921",
+        "eponymName": "Augusta Viktoria of Schleswig-Holstein",
+        "eponymPlaceOfBirth": "Doorn, Netherlands",
+        "eponymPlaceOfDeath": "Potsdam, Germany",
+        "geocode": [
+            52.48587594974779,
+		13.289582901108616
+        ],
+        "externalId": 172,
+        "imagePath": "",
+        "name": "Auguste-Viktoria-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Charlottenburg-Wilmersdorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "04.06.1874",
+        "eponymDateOfDeath": "05.05.1952",
+        "eponymName": "Toni Lessler",
+        "eponymPlaceOfBirth": "Bückeburg, Germany",
+        "eponymPlaceOfDeath": "New York City, USA",
+        "geocode": [
+            52.48208381660877,
+		13.277316802078225
+        ],
+        "externalId": 173,
+        "imagePath": "",
+        "name": "Toni-Lessler-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Steglitz-Zehlendorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "10.03.1776",
+        "eponymDateOfDeath": "19.07.1810",
+        "eponymName": "Luise of Mecklenburg-Strelitz",
+        "eponymPlaceOfBirth": "Hanover, Germany",
+        "eponymPlaceOfDeath": "Hohenziehritz, Germany",
+        "geocode": [
+            52.45805961474853,
+		13.29024316026127
+        ],
+        "externalId": 174,
+        "imagePath": "",
+        "name": "Königin-Luise-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Steglitz-Zehlendorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Ellen Widmann",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.427966976227864,
+		13.305263121868206
+        ],
+        "externalId": 175,
+        "imagePath": "",
+        "name": "Ellen-Widmann-Pfad",
+        "slug": ""
+    },
+    {
+        "district": "Steglitz-Zehlendorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Maggy Breittmayer",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.42855419532191,
+		13.304701592193497
+        ],
+        "externalId": 176,
+        "imagePath": "",
+        "name": "Maggy-Breittmayer-Pfad",
+        "slug": ""
+    },
+    {
+        "district": "Steglitz-Zehlendorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Anna Mackenroth",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.427933773157925,
+		13.301779182793569
+        ],
+        "externalId": 177,
+        "imagePath": "",
+        "name": "Anna-Mackenroth-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Steglitz-Zehlendorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Marie Vögtlin",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.42842587208403,
+		13.3005686180645
+        ],
+        "externalId": 178,
+        "imagePath": "",
+        "name": "Marie-Vögtlin-Weg",
+        "slug": ""
+    },	
+    {
+        "district": "Steglitz-Zehlendorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Elisabeth Feller",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.427102044175165,
+		13.299187551254576
+        ],
+        "externalId": 179,
+        "imagePath": "",
+        "name": "Elisabeth-Feller-Weg",
+        "slug": ""
+    },	
+    {
+        "district": "Steglitz-Zehlendorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Helene von Mülinen",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.427978824698044,
+		13.298039503952834
+        ],
+        "externalId": 180,
+        "imagePath": "",
+        "name": "Helene-von-Mülinen-Weg",
+        "slug": ""
+    },	
+    {
+        "district": "Steglitz-Zehlendorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Sophie Taeuber Arp",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.42820754718388,
+		13.296755054988811
+        ],
+        "externalId": 181,
+        "imagePath": "",
+        "name": "Sophie-Taeuber-Arp-Weg",
+        "slug": ""
+    },	
+    {
+        "district": "Steglitz-Zehlendorf",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Johanna Spyri",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.42916401017434,
+		13.295527440050702
+        ],
+        "externalId": 182,
+        "imagePath": "",
+        "name": "Johanna-Spyri-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Anna Nemitz",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.42734657707219,
+		13.452367946900301
+        ],
+        "externalId": 183,
+        "imagePath": "",
+        "name": "Anna-Nemitz-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Anna Siemsen",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.42828856482208,
+		13.458480652698801
+        ],
+        "externalId": 184,
+        "imagePath": "",
+        "name": "Anna-Siemsen-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Helene Jung",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40569295064404,
+		13.508588898372329
+        ],
+        "externalId": 185,
+        "imagePath": "",
+        "name": "Helene-Jung-Platz",
+        "slug": ""
+    },	
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Dorothea Stutkowski",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40460847845563,
+		13.505884644015865
+        ],
+        "externalId": 186,
+        "imagePath": "",
+        "name": "Dorothea-Stutkowski-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Elfriede Kuhr",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40393934329216,
+		13.507838725063774
+        ],
+        "externalId": 187,
+        "imagePath": "",
+        "name": "Elfriede-Kuhr-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Lieselotte Berger",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.403260764505006,
+		13.507063076795582
+        ],
+        "externalId": 188,
+        "imagePath": "",
+        "name": "Lieselotte-Berger-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Gertrud Dorka",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40351850841919,
+		13.509507740964024
+        ],
+        "externalId": 189,
+        "imagePath": "",
+        "name": "Gertrud-Dorka-Weg",
+        "slug": ""
+    },	
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Jeanette Wolff",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40262369026887,
+		13.50871656163224
+        ],
+        "externalId": 190,
+        "imagePath": "",
+        "name": "Jeanette-Wolff-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Hiltrud Dudek",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.401513317438315,
+		13.510493842465577
+        ],
+        "externalId": 191,
+        "imagePath": "",
+        "name": "Hiltrud-Dudek-Weg",
+        "slug": ""
+    },	
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Ottilie Baader",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.4013525648987,
+		13.50543540875186
+        ],
+        "externalId": 192,
+        "imagePath": "",
+        "name": "Ottilie-Baader-Platz",
+        "slug": ""
+    },	
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Käte Frankenthal",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.400350921842815,
+		13.502799379079407
+        ],
+        "externalId": 193,
+        "imagePath": "",
+        "name": "Käte-Frankenthal-Weg",
+        "slug": ""
+    },	
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Elisabeth Selbert",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40204158425047,
+		13.502267505925937
+        ],
+        "externalId": 194,
+        "imagePath": "",
+        "name": "Elisabeth-Selbert-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Friederike Nadig",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40239012507924,
+		13.501926056493135
+        ],
+        "externalId": 195,
+        "imagePath": "",
+        "name": "Friederike-Nadig-Straße",
+        "slug": ""
+    },									
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Helene Weber",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.403438949059996,
+		13.503285436879237
+        ],
+        "externalId": 196,
+        "imagePath": "",
+        "name": "Helene-Weber-Straße",
+        "slug": ""
+    },	
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Helene Wessel",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40325612433065,
+		13.504798930268885
+        ],
+        "externalId": 197,
+        "imagePath": "",
+        "name": "Helene-Wessel-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Marianne Hapig",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40220032785096,
+		13.506229234901408
+        ],
+        "externalId": 198,
+        "imagePath": "",
+        "name": "Marianne-Hapig-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Marianne Vaerting",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40146429205393,
+		13.506767465578983
+        ],
+        "externalId": 199,
+        "imagePath": "",
+        "name": "Marianne-Vaerting-Weg",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Elly Heuss Knapp",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40256267944044,
+		13.506745193964996
+        ],
+        "externalId": 200,
+        "imagePath": "",
+        "name": "Elly-Heuss-Knapp-Straße",
+        "slug": ""
+    },
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Helene Nathan",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.40287251722036,
+		13.507720403013446
+
+        ],
+        "externalId": 201,
+        "imagePath": "",
+        "name": "Helene-Nathan-Straße",
+        "slug": ""
+    },	
+    {
+        "district": "Neukölln",
+        "entryComplete": false,
+        "eponymDateOfBirth": "",
+        "eponymDateOfDeath": "",
+        "eponymName": "Lowise Reuter",
+        "eponymPlaceOfBirth": "",
+        "eponymPlaceOfDeath": "",
+        "geocode": [
+            52.44744581943484,
+		13.447897087417997
+
+        ],
+        "externalId": 202,
+        "imagePath": "",
+        "name": "Lowise-Reuter-Ring",
+        "slug": ""
+    }				
 ]
