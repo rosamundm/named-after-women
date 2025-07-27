@@ -5,7 +5,6 @@ import Map from '@/components/map';
 import { Street } from '@/types';
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import WelcomeModal from '@/components/ui/welcome-modal';
 
 export const getStreets = async (): Promise<Street[]> => {
   const filePath = path.join(process.cwd(), 'data', 'streets.json')
@@ -21,7 +20,6 @@ const Home: FC = async () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-start mb-8">
           <div className="text-center flex-1">
-            {/* <WelcomeModal /> */}
             <h1 className="text-4xl font-bold tracking-tight mb-4">named after women</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               mapping out women's history in berlin
