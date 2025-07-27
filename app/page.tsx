@@ -21,7 +21,7 @@ const Home: FC = async () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-start mb-8">
           <div className="text-center flex-1">
-            <WelcomeModal />
+            {/* <WelcomeModal /> */}
             <h1 className="text-4xl font-bold tracking-tight mb-4">named after women</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               mapping out women's history in berlin
