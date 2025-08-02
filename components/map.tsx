@@ -68,10 +68,16 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
                       <h3 className="font-semibold text-sm">{street.name}</h3>
                     </div>
                   </div>
-                  {/* person is still living (only in 2 cases, I think!) */}
-                  {!street.eponymDateOfDeath && !street.eponymPlaceOfDeath && (
+                  {/* birth/death details not filled out yet */}
+                  {!street.eponymDateOfBirth && !street.eponymPlaceOfBirth && !street.eponymDateOfDeath && !street.eponymPlaceOfDeath && (
                     <p className="text-xs text-bold text-gray-600">
-                      Named after {street.eponymName}, born {street.eponymDateOfBirth} in ({street.eponymPlaceOfBirth})
+                      Named after {street.eponymName}
+                    </p>
+                  )}
+                  {/* person is still living (only in 2 cases, I think!) */}
+                  {street.eponymDateOfBirth && street.eponymPlaceOfBirth && !street.eponymDateOfDeath && !street.eponymPlaceOfDeath && (
+                    <p className="text-xs text-bold text-gray-600">
+                      Named after {street.eponymName}, born {street.eponymDateOfBirth} in {street.eponymPlaceOfBirth}
                     </p>
                   )}
                   {/* happy path */}
