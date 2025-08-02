@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { FC, useState } from "react"
-// import { ThemeToggle } from "@/components/themeToggle"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { MapPin, Menu } from "lucide-react"
@@ -32,9 +31,6 @@ const Navbar: FC = () => {
               </Link>
             ))}
           </div>
-          {/* <div className="hidden md:flex">
-            <ThemeToggle />
-          </div> */}
 
           {/* Mobile Menu */}
           <div className="md:hidden">
@@ -66,10 +62,6 @@ const Navbar: FC = () => {
                     ))}
                   </div>
                   <div className="pt-4 border-t">
-                    {/* <div className="flex items-center justify-between">
-                      <span className="text-sm font-medium">Theme</span>
-                      <ThemeToggle />
-                    </div> */}
                   </div>
                 </div>
               </SheetContent>
