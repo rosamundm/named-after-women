@@ -2,8 +2,8 @@
 
 import Link from "next/link"
 import { FC, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Button } from "@/components/ui/primitives/button"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/primitives/sheet"
 import { MapPin, Menu } from "lucide-react"
 
 const Navbar: FC = () => {
@@ -19,7 +19,7 @@ const Navbar: FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
 
-          {/* Desktop Navigation */}
+          {/* desktop navigation */}
           <div className="hidden md:flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
@@ -32,7 +32,7 @@ const Navbar: FC = () => {
             ))}
           </div>
 
-          {/* Mobile Menu */}
+          {/* mobile menu */}
           <div className="md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
