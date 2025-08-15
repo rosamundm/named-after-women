@@ -32,11 +32,10 @@ const WelcomeDialog: FC = () => {
             Welcome!
           </Dialog.Title>
           <Dialog.Description className="mb-4">
-            This website doesn't use cookies so you don't need to agree to anything. Yay!
+            This website doesn't use cookies, so you don't need to agree to anything. Yay!
           </Dialog.Description>
           <Dialog.Close asChild>
             <Button
-              // type="button"
               onClick={handleClose}
               className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
             >
