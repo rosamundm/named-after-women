@@ -4,17 +4,23 @@ import path from 'path';
 import Map from '@/components/map';
 import { Street } from '@/types';
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/primitives/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/primitives/card';
 import WelcomeDialog from '@/components/ui/welcome-dialog';
 
 export const getStreets = async (): Promise<Street[]> => {
-  const filePath = path.join(process.cwd(), 'data', 'streets.json')
-  const fileContents = await fs.readFile(filePath, 'utf8')
-  return JSON.parse(fileContents)
-}
+  const filePath = path.join(process.cwd(), 'data', 'streets.json');
+  const fileContents = await fs.readFile(filePath, 'utf8');
+  return JSON.parse(fileContents);
+};
 
 const Home: FC = async () => {
-  const streets = await getStreets()
+  const streets = await getStreets();
 
   return (
     <div className="min-h-screen bg-background">
@@ -22,7 +28,9 @@ const Home: FC = async () => {
         <div className="flex justify-between items-start mb-8">
           <div className="text-center flex-1">
             <WelcomeDialog />
-            <h1 className="text-4xl font-bold tracking-tight mb-4">named after women</h1>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">
+              named after women
+            </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               mapping out women's history in berlin
             </p>
@@ -34,7 +42,8 @@ const Home: FC = async () => {
             <CardHeader>
               <CardTitle>Interactive Map</CardTitle>
               <CardDescription>
-                Click on markers to learn more about each street and the person it's named after.
+                Click on markers to learn more about each street and the person
+                it's named after.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -44,7 +53,7 @@ const Home: FC = async () => {
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default Home;
