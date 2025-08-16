@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { FC, useEffect, useState } from 'react';
 
@@ -9,25 +9,42 @@ import 'leaflet/dist/leaflet.css';
 import { MapProps, Street } from '@/types';
 
 // Dynamically import the map to avoid SSR issues
-const MapContainer = dynamic(() => import("react-leaflet").then((mod) => mod.MapContainer), { ssr: true })
-const TileLayer = dynamic(() => import("react-leaflet").then((mod) => mod.TileLayer), { ssr: true })
-const Marker = dynamic(() => import("react-leaflet").then((mod) => mod.Marker), { ssr: true })
-const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), { ssr: true })
+const MapContainer = dynamic(
+  () => import('react-leaflet').then((mod) => mod.MapContainer),
+  { ssr: true }
+);
+const TileLayer = dynamic(
+  () => import('react-leaflet').then((mod) => mod.TileLayer),
+  { ssr: true }
+);
+const Marker = dynamic(
+  () => import('react-leaflet').then((mod) => mod.Marker),
+  { ssr: true }
+);
+const Popup = dynamic(() => import('react-leaflet').then((mod) => mod.Popup), {
+  ssr: true,
+});
 
 const checkAllEponymValuesTrue = (street: Street, fn = Boolean) => {
-  const arr = [street.eponymDateOfBirth, street.eponymPlaceOfBirth, street.eponymDateOfDeath, street.eponymPlaceOfDeath]
-  return arr.every(fn)
-}
+  const arr = [
+    street.eponymDateOfBirth,
+    street.eponymPlaceOfBirth,
+    street.eponymDateOfDeath,
+    street.eponymPlaceOfDeath,
+  ];
+  return arr.every(fn);
+};
 
 const Map: FC<MapProps> = ({ streets }: MapProps) => {
-  const [isClient, setIsClient] = useState(false)
-  const mapDimensions = { height: "100%", width: "100%" }
-  const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-  const attribution = '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>'
+  const [isClient, setIsClient] = useState(false);
+  const mapDimensions = { height: '100%', width: '100%' };
+  const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+  const attribution =
+    '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>';
 
   useEffect(() => {
-    setIsClient(true)
-  }, [])
+    setIsClient(true);
+  }, []);
 
   if (!isClient) {
     return (
@@ -37,7 +54,7 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
           <p className="text-gray-600">Loading map...</p>
         </div>
       </div>
-    )
+    );
   }
 
   if (!streets) {
@@ -48,19 +65,21 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
           <p className="text-gray-600">Loading map...</p>
         </div>
       </div>
-    )
+    );
   }
 
   return (
     <div className="space-y-6">
       <div className="w-full h-[600px] rounded-lg overflow-hidden border border-border">
-        <MapContainer className="z-0" center={[52.5170124, 13.389094]} zoom={11} style={mapDimensions}>
+        <MapContainer
+          className="z-0"
+          center={[52.5170124, 13.389094]}
+          zoom={11}
+          style={mapDimensions}
+        >
           <TileLayer attribution={attribution} url={url} />
           {streets.map((street, i) => (
-            <Marker 
-              key={i}
-              position={street.geocode}
-            >
+            <Marker key={i} position={street.geocode}>
               <Popup>
                 <div className="p-2 min-w-[200px]">
                   <div className="flex items-start gap-2 mb-2">
@@ -69,26 +88,38 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
                     </div>
                   </div>
                   {/* birth/death details not filled out yet */}
-                  {!street.eponymDateOfBirth && !street.eponymPlaceOfBirth && !street.eponymDateOfDeath && !street.eponymPlaceOfDeath && (
-                    <p className="text-xs text-bold text-gray-600">
-                      Named after {street.eponymName}
-                    </p>
-                  )}
+                  {!street.eponymDateOfBirth &&
+                    !street.eponymPlaceOfBirth &&
+                    !street.eponymDateOfDeath &&
+                    !street.eponymPlaceOfDeath && (
+                      <p className="text-xs text-bold text-gray-600">
+                        Named after {street.eponymName}
+                      </p>
+                    )}
                   {/* person is still living (only in 2 cases, I think!) */}
-                  {street.eponymDateOfBirth && street.eponymPlaceOfBirth && !street.eponymDateOfDeath && !street.eponymPlaceOfDeath && (
-                    <p className="text-xs text-bold text-gray-600">
-                      Named after {street.eponymName}, born {street.eponymDateOfBirth} in {street.eponymPlaceOfBirth}
-                    </p>
-                  )}
+                  {street.eponymDateOfBirth &&
+                    street.eponymPlaceOfBirth &&
+                    !street.eponymDateOfDeath &&
+                    !street.eponymPlaceOfDeath && (
+                      <p className="text-xs text-bold text-gray-600">
+                        Named after {street.eponymName}, born{' '}
+                        {street.eponymDateOfBirth} in{' '}
+                        {street.eponymPlaceOfBirth}
+                      </p>
+                    )}
                   {/* happy path */}
                   {checkAllEponymValuesTrue(street) && (
                     <p className="text-xs text-bold text-gray-600">
-                      Named after {street.eponymName}, {street.eponymDateOfBirth} ({street.eponymPlaceOfBirth}) - {street.eponymDateOfDeath} ({street.eponymPlaceOfDeath})
+                      Named after {street.eponymName},{' '}
+                      {street.eponymDateOfBirth} ({street.eponymPlaceOfBirth}) -{' '}
+                      {street.eponymDateOfDeath} ({street.eponymPlaceOfDeath})
                     </p>
                   )}
                   {/* description is available */}
                   {street.eponymDescription && (
-                    <p className="text-xs text-gray-600 mb-2">{parse(String(street.eponymDescription))}</p>
+                    <p className="text-xs text-gray-600 mb-2">
+                      {parse(String(street.eponymDescription))}
+                    </p>
                   )}
                   {/* image is available */}
                   {street.imagePath && <img src={street.imagePath}></img>}
@@ -99,7 +130,7 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
         </MapContainer>
       </div>
     </div>
-  )
+  );
 };
 
 export default Map;

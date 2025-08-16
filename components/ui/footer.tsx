@@ -1,8 +1,8 @@
-import Link from "next/link"
-import { MapPin, Heart } from "lucide-react"
+import Link from 'next/link';
+import { MapPin, Heart } from 'lucide-react';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="border-t bg-background">
@@ -24,17 +24,26 @@ const Footer = () => {
             <h3 className="text-sm font-semibold">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/faq" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/faq"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/colophon" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/colophon"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Colophon
                 </Link>
               </li>
               <li>
-                <Link href="/impressum" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/impressum"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Impressum & Terms of Service 🇩🇪
                 </Link>
               </li>
@@ -45,15 +54,18 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-8 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-muted-foreground">© {currentYear} Rosamund Mather. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">
+              © {currentYear} Rosamund Mather. All rights reserved.
+            </p>
             <p className="text-sm text-muted-foreground flex items-center">
-              Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> for Berlin explorers
+              Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> for
+              Berlin explorers
             </p>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 };
 
 export default Footer;
