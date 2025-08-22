@@ -107,9 +107,14 @@ const ColophonPage: FC = () => {
             enabling me to focus my energies on other aspects. I then made a
             whole lot of corrections and customisations to the code myself (e.g.
             swapping out the generated map component for the one I'd built for
-            the previous site). My overall stance on generative AI remains
-            staunchly critical and I have every intention of keeping it out of
-            the rest of the project.
+            the previous site).
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            My overall stance on generative AI remains staunchly critical. Yet as
+            someone earning a living as a developer, I've accepted that I don't really
+            have the option of staying totally out of its way. What I can do, however,
+            is endeavour to keep it out of my own projects, where I have more freedom
+            to follow my personal ethics.
           </p>
         </main>
       </div>
