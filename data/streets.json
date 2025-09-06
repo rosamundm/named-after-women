@@ -2826,5 +2826,47 @@
     "imagePath": "",
     "name": "Lowise-Reuter-Ring",
     "slug": ""
+  },
+  {
+    "district": "Marzahn-Hellersdorf",
+    "entryComplete": false,
+    "eponymDateOfBirth": "25.03.1865",
+    "eponymDateOfDeath": "27.01.1922",
+    "eponymName": "Luise Zietz",
+    "eponymPlaceOfBirth": "Bargteheide, Germany",
+    "eponymPlaceOfDeath": "Berlin, Germany",
+    "geocode": [52.52045228351879, 13.547341324538795],
+    "externalId": 202,
+    "imagePath": "https://rosmath.sirv.com/Images/berlin_streets/luise_zietz_str.JPEG",
+    "name": "Luise-Zietz-Straße",
+    "slug": ""
+  },
+  {
+    "district": "Marzahn-Hellersdorf",
+    "entryComplete": false,
+    "eponymDateOfBirth": "02.07.1865",
+    "eponymDateOfDeath": "09.08.1916",
+    "eponymName": "Lily Braun",
+    "eponymPlaceOfBirth": "Halberstadt, Germany",
+    "eponymPlaceOfDeath": "Berlin, Germany",
+    "geocode": [52.52043399665047, 13.59270904396767],
+    "externalId": 203,
+    "imagePath": "https://rosmath.sirv.com/Images/berlin_streets/lily_braun_str.JPEG",
+    "name": "Lily-Braun-Straße",
+    "slug": ""
+  },
+  {
+    "district": "Marzahn-Hellersdorf",
+    "entryComplete": false,
+    "eponymDateOfBirth": "12.05.1900",
+    "eponymDateOfDeath": "06.05.1971",
+    "eponymName": "Helene Weigel",
+    "eponymPlaceOfBirth": "Vienna, Austria",
+    "eponymPlaceOfDeath": "Berlin, Germany",
+    "geocode": [52.52718029997591, 13.53990781249569],
+    "externalId": 204,
+    "imagePath": "https://rosmath.sirv.com/Images/berlin_streets/helene_weigel_pl.JPEG",
+    "name": "Helene-Weigel-Platz",
+    "slug": ""
   }
 ]
