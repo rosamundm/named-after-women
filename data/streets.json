@@ -751,7 +751,7 @@
     "eponymPlaceOfDeath": "Saint Croix, Virgin Islands",
     "geocode": [52.50180534725935, 13.428595735479972],
     "externalId": 54,
-    "imagePath": null,
+    "imagePath": "https://rosmath.sirv.com/Images/berlin_streets/audre_lorde_str.jpeg",
     "name": "Audre-Lorde-Straße",
     "slug": "audre-lorde-strasse"
   },
