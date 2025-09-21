@@ -9,7 +9,8 @@ import {
   SheetTrigger,
 } from '@/components/ui/primitives/sheet';
 import { MapPin, Menu } from 'lucide-react';
-
+import ModeToggle from './theme/mode-toggle';
+import { ThemeProvider } from './theme/theme-provider';
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -73,6 +74,9 @@ const Navbar: FC = () => {
               </SheetContent>
             </Sheet>
           </div>
+          <ThemeProvider>
+            <ModeToggle />
+          </ThemeProvider>
         </div>
       </div>
     </nav>

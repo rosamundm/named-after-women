@@ -12,6 +12,8 @@ import {
   CardTitle,
 } from '@/components/ui/primitives/card';
 import WelcomeDialog from '@/components/ui/welcome-dialog';
+import ModeToggle from '@/components/ui/theme/mode-toggle';
+import { ThemeProvider } from '@/components/ui/theme/theme-provider';
 
 export const getStreets = async (): Promise<Street[]> => {
   const filePath = path.join(process.cwd(), 'data', 'streets.json');
@@ -36,13 +38,12 @@ const Home: FC = async () => {
             </p>
           </div>
         </div>
-
         <div className="mb-8">
           <Card>
             <CardHeader>
               <CardTitle>Interactive Map</CardTitle>
               <CardDescription>
-                Click on markers to learn more about each street and the person
+                Click on the markers to learn more about each street and the person
                 it's named after.
               </CardDescription>
             </CardHeader>
