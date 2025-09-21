@@ -3,9 +3,11 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import { FC, useEffect, useState } from 'react';
 import { Button } from './primitives/button';
+import { useTheme } from 'next-themes';
 
 const WelcomeDialog: FC = () => {
   const [showDialog, setShowDialog] = useState<boolean>(false);
+  const { theme } = useTheme()
 
   useEffect(() => {
     const hasVisited = sessionStorage.getItem('hasVisited') === 'true';
@@ -25,9 +27,11 @@ const WelcomeDialog: FC = () => {
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/50" />
         <Dialog.Content
-          className="fixed top-1/2 left-1/2 w-full max-w-sm transform -translate-x-1/2 -translate-y-1/2
-             bg-white p-6 rounded-lg shadow-xl
-             flex flex-col items-center justify-center text-center space-y-4"
+          className={`
+            fixed top-1/2 left-1/2 w-full max-w-sm transform -translate-x-1/2 -translate-y-1/2
+            p-6 rounded-lg shadow-xl flex flex-col items-center justify-center text-center space-y-4
+            ${theme === "dark" ? "bg-gray-700 text-white" : "bg-white text-black"}
+          `}
         >
           <Dialog.Title className="text-xl font-semibold mb-2">
             Welcome!

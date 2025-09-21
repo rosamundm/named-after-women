@@ -64,7 +64,7 @@ const AboutPage: FC = () => {
             characterise Berlin. Within the constraints of this project, the
             areas where this phenomenon is perhaps most obvious are at
             Hauptbahnhof (west of Washingtonplatz) and off Warschauer Straße
-            (around the Uber Arena). But, also randomly in a corner of Neukölln
+            (around the Uber Arena). But also, randomly in a corner of Neukölln
             where you probably can't get a flat white with oat milk served to
             you by a Melburnian! That's the kind of place I'm most interested
             in.
