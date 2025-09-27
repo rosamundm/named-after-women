@@ -27,7 +27,7 @@ const ModeToggle: FC = () => {
         </Button>
       </DropdownMenuTrigger>
 	  <DropdownMenuContent asChild align="end">
-      <div className="rounded-lg shadow-md bg-neutral-900 light:bg-white">
+      <div className="rounded-lg shadow-md bg-white dark:bg-neutral-900">
 	  	  {['light', 'dark', 'system'].map((mode) => (
   			  <DropdownMenuItem key={mode} className="p-2" onClick={() => setTheme(mode)}>
     		    {mode}
