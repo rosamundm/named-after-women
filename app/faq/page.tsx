@@ -1,4 +1,7 @@
 import { FC } from 'react';
+// import { Accordion } from '@radix-ui/react-accordion';
+import { MessageCircleQuestion } from 'lucide-react';
+import { Accordion } from 'radix-ui';
 
 const FaqPage: FC = () => {
   return (
@@ -11,11 +14,30 @@ const FaqPage: FC = () => {
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </header>
 
-        <main className="space-y-8">
-          <h2 className="text-xl font-bold mb-4">
-            There's a famous Berlin street named after a princess that I can't
-            find on here. Why?
-          </h2>
+        <Accordion.Root
+		      // className="rounded-md bg-mauve6 shadow-[0_2px_10px]"
+		      type="single"
+		      // defaultValue="item-1"
+		      collapsible
+	      >
+        {/* <main className="space-y-8"> */}
+          <Accordion.Item value="item-1">
+            <div className="flex gap-2">
+
+      
+            <MessageCircleQuestion />
+          <Accordion.Trigger>
+
+            <h2 className="text-xl font-bold mb-4">
+              There's a famous Berlin street named after a princess that I can't
+              find on here. Why?
+            </h2>
+
+
+  
+          </Accordion.Trigger>
+          </div>
+          <Accordion.Content>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Since there are so many such streets (among them Luisenstraße,
             Sophienstraße, and a surprising number of instances of
@@ -30,6 +52,9 @@ const FaqPage: FC = () => {
             saying that I don't necessarily endorse every single thing they
             stood for.
           </p>
+          </Accordion.Content>
+      </Accordion.Item>
+
           <h2 className="text-xl font-bold mb-4">
             I see a street missing. Shall I point this out to you?
           </h2>
@@ -111,7 +136,8 @@ const FaqPage: FC = () => {
             you are someone who is not cis and you have any ideas or feedback,
             feel free to reach out.
           </p>
-        </main>
+        {/* </main> */}
+        </Accordion.Root>
       </div>
     </div>
   );
