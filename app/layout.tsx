@@ -28,7 +28,7 @@ const RootLayout: FC<{ children: React.ReactNode }> = ({ children }) => {
       <body className={inter.className}>
         <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
         >
