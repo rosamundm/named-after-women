@@ -2966,5 +2966,19 @@
     "imagePath": "",
     "name": "Helga Haase",
     "slug": ""
+  },
+  {
+    "district": "Mitte",
+    "entryComplete": false,
+    "eponymDateOfBirth": "09.08.1885",
+    "eponymDateOfDeath": "",
+    "eponymName": "Clara-Mleinek-Straße",
+    "eponymPlaceOfBirth": "Zabrze, Poland",
+    "eponymPlaceOfDeath": "",
+    "geocode": [52.534197342711906, 13.363797332665095],
+    "externalId": 212,
+    "imagePath": "",
+    "name": "Clara Mleinek",
+    "slug": "https://rosmath.sirv.com/Images/berlin_streets/clara_mleinek_str.jpeg"
   }
 ]
