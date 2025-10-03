@@ -1281,7 +1281,7 @@
     "eponymName": "Hedwig Porschütz",
     "eponymPlaceOfBirth": "Berlin, Germany",
     "eponymPlaceOfDeath": "Berlin, Germany",
-    "geocode": [52.5340785, 13.3636737],
+    "geocode": [52.53420817228677, 13.366254471330477],
     "externalId": 92,
     "imagePath": "https://res.cloudinary.com/dihfichjz/image/upload/v1668359555/street_project/signs/hedwig_porschuetz_str_ucvvw1.jpg",
     "name": "Hedwig-Porschütz-Straße",
@@ -2977,8 +2977,8 @@
     "eponymPlaceOfDeath": "",
     "geocode": [52.534197342711906, 13.363797332665095],
     "externalId": 212,
-    "imagePath": "",
+    "imagePath": "https://rosmath.sirv.com/Images/berlin_streets/clara_mleinek_str.jpeg",
     "name": "Clara Mleinek",
-    "slug": "https://rosmath.sirv.com/Images/berlin_streets/clara_mleinek_str.jpeg"
+    "slug": ""
   }
 ]
