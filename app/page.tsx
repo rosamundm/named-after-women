@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { promises as fs } from 'fs';
 import path from 'path';
-import Map from '@/components/map';
+import Map from '@/components/ui/map/map';
 import { Street } from '@/types';
 
 import {
@@ -12,8 +12,7 @@ import {
   CardTitle,
 } from '@/components/ui/primitives/card';
 import WelcomeDialog from '@/components/ui/welcome-dialog';
-import ModeToggle from '@/components/ui/theme/mode-toggle';
-import { ThemeProvider } from '@/components/ui/theme/theme-provider';
+import MapBox from '@/components/ui/map/map-box';
 
 export const getStreets = async (): Promise<Street[]> => {
   const filePath = path.join(process.cwd(), 'data', 'streets.json');
@@ -48,7 +47,7 @@ const Home: FC = async () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Map streets={streets} />
+              <MapBox streets={streets} />
             </CardContent>
           </Card>
         </div>

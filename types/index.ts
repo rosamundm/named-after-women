@@ -28,7 +28,10 @@ export interface Street {
   tags?: Tag['slug'][];
 }
 
+export interface MapBoxProps {
+  streets: Street[];
+}
+
 export interface MapProps {
-  districts?: District[];
   streets: Street[];
 }
