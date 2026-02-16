@@ -1,22 +1,22 @@
-import { Street } from "@/types"
+import { Street, Tag } from "@/types"
 
-const getTypeCount = (type: string, streets: Street[]) => streets.filter((street: Street) => street.type === type).length
+const getTagCount = (tag: Tag, streets: Street[]) => streets.filter(street => street.tags?.includes(tag)).length
 
-export const getEponymTypeInfo = (streets: Street[]) => (
+export const getTagInfo = (streets: Street[]) => (
     [
         {
-            name: "politics",
-            count: getTypeCount("politics", streets),
-            description: "Women who held political office in Berlin"
+            name: "politicians & activists",
+            count: getTagCount("politics", streets),
+            description: "Women who held office or were active in political movements"
         },
         {
             name: "resistance members",
-            count: getTypeCount("resistance", streets),
+            count: getTagCount("resistance", streets),
             description: "Women who risked their lives for truth and justice during WW2"
         },
         {
             name: "writers & artists",
-            count: getTypeCount("literature & arts", streets),
+            count: getTagCount("literature & arts", streets),
             description: "Women who have contributed to Berlin's rich cultural fabric"
         },
     ]

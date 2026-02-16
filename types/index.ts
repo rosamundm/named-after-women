@@ -1,15 +1,10 @@
-export interface Tag {
-  id: number;
-  name: string;
-  slug: string;
-}
-
-// todo: convert to enum?
 export interface District {
   id: number;
   name: string;
   slug: string;
 }
+
+export type Tag = "literature & arts" | "resistance" | "science" | "politics";
 
 export interface Street {
   externalId?: number;
@@ -25,8 +20,7 @@ export interface Street {
   eponymPlaceOfDeath?: string | null;
   eponymDescription?: string | React.JSX.Element | React.JSX.Element[]; // used because of html-react-parse
   imagePath?: string | null;
-  tags?: Tag['slug'][];
-  type?: 'literature & arts' | 'resistance' | 'science' | 'politics';
+  tags?: Tag[];
 }
 
 export interface MapBoxProps {
