@@ -12,7 +12,7 @@ import {
   CardTitle,
 } from '@/components/ui/primitives/card';
 import WelcomeDialog from '@/components/ui/welcome-dialog';
-import MapBox from '@/components/ui/map/map-box';
+import { Filters } from '@/components/ui/filters';
 
 export const getStreets = async (): Promise<Street[]> => {
   const filePath = path.join(process.cwd(), 'data', 'streets.json');
@@ -47,10 +47,14 @@ const Home: FC = async () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <MapBox streets={streets} />
+              <Map streets={streets} />
             </CardContent>
           </Card>
         </div>
+
+        {/* todo: put these in a collapsible? */}
+        <Filters streets={streets} />
+
       </div>
     </div>
   );

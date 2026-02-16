@@ -26,6 +26,7 @@ export interface Street {
   eponymDescription?: string | React.JSX.Element | React.JSX.Element[]; // used because of html-react-parse
   imagePath?: string | null;
   tags?: Tag['slug'][];
+  type?: 'literature & arts' | 'resistance' | 'science' | 'politics';
 }
 
 export interface MapBoxProps {
@@ -33,5 +34,9 @@ export interface MapBoxProps {
 }
 
 export interface MapProps {
+  streets: Street[];
+}
+
+export interface FilterProps {
   streets: Street[];
 }
