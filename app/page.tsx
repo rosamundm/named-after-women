@@ -12,7 +12,7 @@ import {
   CardTitle,
 } from '@/components/ui/primitives/card';
 import WelcomeDialog from '@/components/ui/welcome-dialog';
-import { Filters } from '@/components/ui/filters';
+import Filters from '@/components/ui/filters';
 
 export const getStreets = async (): Promise<Street[]> => {
   const filePath = path.join(process.cwd(), 'data', 'streets.json');
@@ -21,6 +21,7 @@ export const getStreets = async (): Promise<Street[]> => {
 };
 
 const Home: FC = async () => {
+  // todo: can this be memoized?
   const streets = await getStreets();
 
   return (
