@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/primitives/card';
 import WelcomeDialog from '@/components/ui/welcome-dialog';
 import Filters from '@/components/ui/filters';
+import MapWrapper from '@/components/ui/map/map-wrapper';
 
 export const getStreets = async (): Promise<Street[]> => {
   const filePath = path.join(process.cwd(), 'data', 'streets.json');
@@ -20,8 +21,11 @@ export const getStreets = async (): Promise<Street[]> => {
   return JSON.parse(fileContents);
 };
 
+
+const showTagInfoBelow = false  // feature flag
+
 const Home: FC = async () => {
-  // todo: can this be memoized?
+
   const streets = await getStreets();
 
   return (
@@ -48,13 +52,12 @@ const Home: FC = async () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Map streets={streets} />
+              <MapWrapper streets={streets} />
             </CardContent>
           </Card>
         </div>
 
-        {/* todo: put these in a collapsible? */}
-        <Filters streets={streets} />
+        {showTagInfoBelow && <Filters streets={streets} />}
 
       </div>
     </div>

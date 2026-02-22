@@ -21,3 +21,18 @@ export const getTagInfo = (streets: Street[]) => (
         },
     ]
 )
+
+export const districtNames = [
+    "Charlottenburg-Wilmersdorf",
+    "Friedrichshain-Kreuzberg",
+    "Lichtenberg",
+    "Marzahn-Hellersdorf",
+    "Mitte",
+    "Neukölln",
+    "Pankow",
+    "Reinickendorf",
+    "Spandau",
+    "Steglitz-Zehlendorf",
+    "Tempelhof-Schöneberg",
+    "Treptow-Köpenick"
+]

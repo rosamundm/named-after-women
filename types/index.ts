@@ -1,16 +1,25 @@
-export interface District {
-  id: number;
-  name: string;
-  slug: string;
-}
+export type District =
+  'Charlottenburg-Wilmersdorf' |
+  'Friedrichshain-Kreuzberg' |
+  'Lichtenberg' |
+  'Marzahn-Hellersdorf' |
+  'Mitte' |
+  'Neukölln' |
+  'Pankow' |
+  'Reinickendorf' |
+  'Spandau' |
+  'Steglitz-Zehlendorf' |
+  'Tempelhof-Schöneberg' |
+  'Treptow-Köpenick' |
+  '';
 
-export type Tag = "literature & arts" | "resistance" | "science" | "politics";
+export type Tag = 'literature & arts' | 'resistance' | 'science' | 'politics' | ''
 
 export interface Street {
   externalId?: number;
   name: string;
   slug: string;
-  district: District['slug'];
+  district: District;
   geocode: [number, number];
   entryComplete: boolean;
   eponymName: string;
@@ -23,12 +32,12 @@ export interface Street {
   tags?: Tag[];
 }
 
-export interface MapBoxProps {
-  streets: Street[];
-}
-
 export interface MapProps {
   streets: Street[];
+  filters: {
+    tag: Tag;
+    district: District;
+  }
 }
 
 export interface FilterProps {

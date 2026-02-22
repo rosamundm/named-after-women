@@ -35,7 +35,7 @@ const checkAllEponymValuesTrue = (street: Street, fn = Boolean) => {
   return arr.every(fn);
 };
 
-const Map: FC<MapProps> = ({ streets }: MapProps) => {
+const Map: FC<MapProps> = ({ streets, filters }: MapProps) => {
   const [isClient, setIsClient] = useState(false);
   const mapDimensions = { height: '100%', width: '100%' };
   const url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -68,6 +68,25 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
     );
   }
 
+  // const filteredData = streets.filter((street) =>
+  //   (!tagFilter || street.tags?.includes(tagFilter)) &&
+  //   (!districtFilter || street.district === districtFilter)
+  // );
+
+  const { tag: tagFilter, district: districtFilter } = filters; 
+
+  const filteredData = streets.filter((street) => {
+    if (tagFilter && !street.tags?.includes(tagFilter)) {
+      return false;
+    }
+    if (districtFilter && street.district !== districtFilter) {
+      return false;
+    }
+    return true;
+  });
+
+  console.log("filteredData", filteredData)
+
   return (
     <div className="space-y-6">
       <div className="w-full h-[600px] rounded-lg overflow-hidden border border-border">
@@ -78,7 +97,7 @@ const Map: FC<MapProps> = ({ streets }: MapProps) => {
           style={mapDimensions}
         >
           <TileLayer attribution={attribution} url={url} />
-          {streets.map((street, i) => (
+          {filteredData.map((street, i) => (
             <Marker key={i} position={street.geocode}>
               <Popup>
                 <div className="p-2 min-w-[200px]">
