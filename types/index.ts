@@ -13,8 +13,14 @@ export type District =
   'Treptow-Köpenick' |
   'all';
 
-export type Tag = 'literature & arts' | 'resistance' | 'science' | 'politics' | 'all'
-
+export type Tag =
+  'literature' |
+  'art' |
+  'music, film, theatre' |
+  'resistance' |
+  'politics' |
+  'science' |
+  'all'
 
 export interface Street {
   externalId?: number;

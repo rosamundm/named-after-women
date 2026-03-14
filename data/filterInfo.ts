@@ -1,26 +1,31 @@
 import { Street, Tag } from "@/types"
 
+
+// todo: funcs no longer needed really — just create list of tag names and add verbose names to Tag type
+
 const getTagCount = (tag: Tag, streets: Street[]) => streets.filter(street => street.tags?.includes(tag)).length
 
 export const getTagInfo = (streets: Street[]) => (
     [
         {
             name: "politics",
-            descriptiveName: "politicians & activists",
+            verboseName: "politics & activism",
             count: getTagCount("politics", streets),
-            description: "Women who held office or were active in political movements"
         },
         {
             name: "resistance",
-            descriptiveName: "resistance members",
+            verboseName: "resistance during ww2",
             count: getTagCount("resistance", streets),
-            description: "Women who risked their lives for truth and justice during WW2"
         },
         {
-            name: "literature & arts",
-            descriptiveName: "writers & artists",
-            count: getTagCount("literature & arts", streets),
-            description: "Women who have contributed to Berlin's rich cultural fabric"
+            name: "literature",
+            verboseName: "literature",
+            count: getTagCount("literature", streets),
+        },
+        {
+            name: "art",
+            descriptiveName: "art",
+            count: getTagCount("art", streets),
         },
     ]
 )

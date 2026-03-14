@@ -26,8 +26,10 @@ interface DropdownGroupProps {
     setFilters: React.Dispatch<React.SetStateAction<DropdownState>>;
 }
 
-// todo: would be better as a multi-select dropdown
-// todo: add proper design system instead of inline styles
+// todo:
+// - would be better as a multi-select dropdown
+// - map dropdowns in some way, despite varying filter logic between filter type, to make component smaller
+// - add proper design system instead of inline styles
 
 export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilters }) => {
     const { theme } = useTheme()
