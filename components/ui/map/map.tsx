@@ -68,24 +68,13 @@ const Map: FC<MapProps> = ({ streets, filters }: MapProps) => {
     );
   }
 
-  // const filteredData = streets.filter((street) =>
-  //   (!tagFilter || street.tags?.includes(tagFilter)) &&
-  //   (!districtFilter || street.district === districtFilter)
-  // );
+const { tag: tagFilter, district: districtFilter } = filters; 
 
-  const { tag: tagFilter, district: districtFilter } = filters; 
-
-  const filteredData = streets.filter((street) => {
-    if (tagFilter && !street.tags?.includes(tagFilter)) {
-      return false;
-    }
-    if (districtFilter && street.district !== districtFilter) {
-      return false;
-    }
-    return true;
-  });
-
-  console.log("filteredData", filteredData)
+const filteredData = streets.filter((street) => {
+  const tagMatch = !tagFilter || tagFilter === 'all' || (street.tags && street.tags.includes(tagFilter));
+  const districtMatch = !districtFilter || districtFilter === 'all' || street.district === districtFilter;
+  return tagMatch && districtMatch;
+});
 
   return (
     <div className="space-y-6">

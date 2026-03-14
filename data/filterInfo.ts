@@ -5,17 +5,20 @@ const getTagCount = (tag: Tag, streets: Street[]) => streets.filter(street => st
 export const getTagInfo = (streets: Street[]) => (
     [
         {
-            name: "politicians & activists",
+            name: "politics",
+            descriptiveName: "politicians & activists",
             count: getTagCount("politics", streets),
             description: "Women who held office or were active in political movements"
         },
         {
-            name: "resistance members",
+            name: "resistance",
+            descriptiveName: "resistance members",
             count: getTagCount("resistance", streets),
             description: "Women who risked their lives for truth and justice during WW2"
         },
         {
-            name: "writers & artists",
+            name: "literature & arts",
+            descriptiveName: "writers & artists",
             count: getTagCount("literature & arts", streets),
             description: "Women who have contributed to Berlin's rich cultural fabric"
         },

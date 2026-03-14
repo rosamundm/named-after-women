@@ -13,20 +13,18 @@ type Filters = {
     district: District;
 }
 
+export interface DropdownState {
+  tag: Tag;
+  district: District;
+}
+
 interface DropdownGroupProps { 
     data: Street[];
-    filters?: {
-        tag: Tag;
-        district: District;
-    };
-    setFilters: React.Dispatch<React.SetStateAction<any>>;  // todo: specify the type
-    // setFilters?: React.Dispatch<
-    //     React.SetStateAction<{
-    //     tag: Tag;
-    //     district: District;
-    //     }>
-    // >;
+    filters?: DropdownState;
+    setFilters: React.Dispatch<React.SetStateAction<DropdownState>>;
 }
+
+// todo: maybe this would work better as a multi-select dropdown
 
 export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilters }) => {
     const tagNames = getTagInfo(data).map(tag => tag.name);
@@ -46,9 +44,10 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
         <div className="space-y-6">
             <div className="flex gap-4">
 
+                {/* tag filter */}
                 <Select.Root
-                    value={filters?.tag}
-                    onValueChange={(value) => handleFilterChange("tag", value as Tag)}
+                    value={filters?.tag || 'all'}
+                    onValueChange={(value) => handleFilterChange('tag', value as Tag)}
                 >
                     <Select.Trigger className="flex items-center justify-between w-48 px-3 py-2 border rounded">
                         <Select.Value placeholder="All tags" />
@@ -60,7 +59,7 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                     <Select.Portal>
                         <Select.Content className="bg-white shadow-md rounded">
                             <Select.Viewport>
-                                <Select.Item value="tag">
+                                <Select.Item value="all">
                                     <Select.ItemText>All tags</Select.ItemText>
                                 </Select.Item>
 
@@ -82,8 +81,8 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                 </Select.Root>
 
                 <Select.Root
-                    value={filters?.district}
-                    onValueChange={(value) => handleFilterChange("district", value as District)}
+                    value={filters?.district || 'all'}
+                    onValueChange={(value) => handleFilterChange('district', value as District)}
                 >
                     <Select.Trigger className="flex items-center justify-between w-48 px-3 py-2 border rounded">
                         <Select.Value placeholder="All districts" />
@@ -92,10 +91,12 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                         </Select.Icon>
                     </Select.Trigger>
 
+
+                    {/* district filter */}
                     <Select.Portal>
                         <Select.Content className="bg-white shadow-md rounded">
                             <Select.Viewport>
-                                <Select.Item value="district">
+                                <Select.Item value="all">
                                     <Select.ItemText>All districts</Select.ItemText>
                                 </Select.Item>
 

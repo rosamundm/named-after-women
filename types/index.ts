@@ -11,9 +11,10 @@ export type District =
   'Steglitz-Zehlendorf' |
   'Tempelhof-Schöneberg' |
   'Treptow-Köpenick' |
-  '';
+  'all';
 
-export type Tag = 'literature & arts' | 'resistance' | 'science' | 'politics' | ''
+export type Tag = 'literature & arts' | 'resistance' | 'science' | 'politics' | 'all'
+
 
 export interface Street {
   externalId?: number;
