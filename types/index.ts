@@ -20,6 +20,8 @@ export type Tag =
   'resistance' |
   'politics' |
   'science' |
+  'international' |
+  'other' |
   'all'
 
 export interface Street {
