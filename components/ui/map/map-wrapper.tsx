@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useState } from 'react';
 import { Street } from '@/types';
@@ -10,13 +10,11 @@ type MapWrapperProps = {
   streets: Street[];
 };
 
-const dropdownInitialState: DropdownState = {
-    tag: 'all',
-    district: 'all'
-}
-
 const MapWrapper = ({ streets }: MapWrapperProps) => {
-    const [dropdownFilters, setDropdownFilters] = useState<DropdownState>(dropdownInitialState);
+    const [dropdownFilters, setDropdownFilters] = useState<DropdownState>({
+        tag: 'all',
+        district: 'all'
+    });
 
     return (
         <>

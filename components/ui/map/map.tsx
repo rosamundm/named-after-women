@@ -77,7 +77,7 @@ const filteredData = streets.filter((street) => {
 });
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 p-6">
       <div className="w-full h-[600px] rounded-lg overflow-hidden border border-border">
         <MapContainer
           className="z-0"

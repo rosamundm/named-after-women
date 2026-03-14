@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="border-t bg-background">
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-8 md:grid-cols-4">
-          {/* Brand Section */}
+
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
               <MapPin className="h-6 w-6 text-primary" />
@@ -19,7 +19,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Resources Section */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold">Resources</h3>
             <ul className="space-y-2 text-sm">
@@ -49,17 +48,13 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          
         </div>
 
-        {/* Bottom Section */}
         <div className="mt-8 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
               © {currentYear} Rosamund Mather. All rights reserved.
-            </p>
-            <p className="text-sm text-muted-foreground flex items-center">
-              Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> for
-              Berlin explorers
             </p>
           </div>
         </div>
