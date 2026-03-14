@@ -27,6 +27,7 @@ interface DropdownGroupProps {
 }
 
 // todo: would be better as a multi-select dropdown
+// todo: add proper design system instead of inline styles
 
 export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilters }) => {
     const { theme } = useTheme()
@@ -64,7 +65,10 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                             ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}
                         `}>
                             <Select.Viewport>
-                                <Select.Item value="all">
+                                <Select.Item value="all" className={`flex items-center justify-between px-3 py-2
+                                    ${theme === "dark" ? "hover:bg-violet-500" : "hover:bg-violet-300"}
+                                    focus:outline-none
+                                `}>
                                     <Select.ItemText>All tags</Select.ItemText>
                                 </Select.Item>
 
@@ -72,8 +76,10 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                                         <Select.Item
                                             key={index}
                                             value={tagName}
-                                            className="flex items-center justify-between px-3 py-2 hover:bg-gray-100"
-                                        >
+                                            className={`flex items-center justify-between px-3 py-2
+                                                ${theme === "dark" ? "hover:bg-violet-500" : "hover:bg-violet-300"}
+                                                focus:outline-none
+                                        `}>
                                             <Select.ItemText>{tagName}</Select.ItemText>
                                             <Select.ItemIndicator>
                                                 <CheckIcon />
@@ -105,7 +111,10 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                             ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}
                         `}>
                             <Select.Viewport>
-                                <Select.Item value="all">
+                                <Select.Item value="all" className={`flex items-center justify-between px-3 py-2
+                                    ${theme === "dark" ? "hover:bg-violet-500" : "hover:bg-violet-300"}
+                                    focus:outline-none
+                                `}>
                                     <Select.ItemText>All districts</Select.ItemText>
                                 </Select.Item>
 
@@ -113,8 +122,10 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                                         <Select.Item
                                             key={index}
                                             value={district}
-                                            className="flex items-center justify-between px-3 py-2 hover:bg-gray-100"
-                                        >
+                                            className={`flex items-center justify-between px-3 py-2
+                                                ${theme === "dark" ? "hover:bg-violet-500" : "hover:bg-violet-300"}
+                                                focus:outline-none
+                                        `}>
                                             <Select.ItemText>{district}</Select.ItemText>
                                             <Select.ItemIndicator>
                                                 <CheckIcon />
