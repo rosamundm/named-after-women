@@ -13,6 +13,7 @@ export type District =
   'Treptow-Köpenick' |
   'all';
 
+// todo: make tags more verbose
 export type Tag =
   'literature' |
   'art' |
