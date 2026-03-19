@@ -27,6 +27,26 @@ export const getTagInfo = (streets: Street[]) => (
             descriptiveName: "art",
             count: getTagCount("art", streets),
         },
+        {
+            name: "music, film, theatre",
+            descriptiveName: "music, film, theatre",
+            count: getTagCount("music, film, theatre", streets),
+        },
+        {
+            name: "science",
+            descriptiveName: "science",
+            count: getTagCount("science", streets),
+        },
+        {
+            name: "international",
+            descriptiveName: "international",
+            count: getTagCount("international", streets),
+        },
+        {
+            name: "other",
+            descriptiveName: "other",
+            count: getTagCount("other", streets),
+        }
     ]
 )
 
