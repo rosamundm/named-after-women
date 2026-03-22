@@ -21,6 +21,7 @@ export type Tag =
   'resistance' |
   'politics & activism' |
   'science' |
+  'education' |
   'international' |
   'other' |
   'all'
