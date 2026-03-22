@@ -8,9 +8,9 @@ const getTagCount = (tag: Tag, streets: Street[]) => streets.filter(street => st
 export const getTagInfo = (streets: Street[]) => (
     [
         {
-            name: "politics",
+            name: "politics & activism",
             verboseName: "politics & activism",
-            count: getTagCount("politics", streets),
+            count: getTagCount("politics & activism", streets),
         },
         {
             name: "resistance",
