@@ -71,10 +71,12 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                                     ${theme === "dark" ? "hover:bg-violet-500" : "hover:bg-violet-300"}
                                     focus:outline-none
                                 `}>
-                                    <Select.ItemText>All tags</Select.ItemText>
+                                    <Select.ItemText>
+                                        Tag filtering coming soon!
+                                    </Select.ItemText>
                                 </Select.Item>
 
-                                    {tagNames.map((tagName, index) => (
+                                    {/* {tagNames.map((tagName, index) => (
                                         <Select.Item
                                             key={index}
                                             value={tagName}
@@ -87,7 +89,7 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                                                 <CheckIcon />
                                             </Select.ItemIndicator>
                                         </Select.Item>
-                                    ))}
+                                    ))} */}
                             </Select.Viewport>
                         </Select.Content>
                     </Select.Portal>
