@@ -12,20 +12,10 @@ import {
   CardTitle,
 } from '@/components/ui/primitives/card';
 import WelcomeDialog from '@/components/ui/welcome-dialog';
-import Filters from '@/components/ui/filters';
 import MapWrapper from '@/components/ui/map/map-wrapper';
-
-export const getStreets = async (): Promise<Street[]> => {
-  const filePath = path.join(process.cwd(), 'data', 'streets.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
-};
-
-
-const showTagInfoBelow = false  // feature flag
+import { getStreets } from '@/data/fetch';
 
 const Home: FC = async () => {
-
   const streets = await getStreets();
 
   return (
@@ -56,8 +46,6 @@ const Home: FC = async () => {
             </CardContent>
           </Card>
         </div>
-
-        {showTagInfoBelow && <Filters streets={streets} />}
 
       </div>
     </div>
