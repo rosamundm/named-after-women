@@ -35,6 +35,27 @@ const checkAllEponymValuesTrue = (street: Street, fn = Boolean) => {
   return arr.every(fn);
 };
 
+// todo: move to helpers file, create new types for upstream and mapped streets
+const mapStreetPropsFromSnakeToCamelCase = (streets: Street[]) => 
+
+  // todo: add proper type
+  streets.map((street: any) =>
+    ({
+      name: street.name,
+      slug: street.slug,
+      district: street.district,
+      geocode: street.geocode,
+      entryComplete: street.entry_complete,
+      eponymName: street.eponym_name,
+      eponymDateOfBirth: street.eponym_date_of_birth,
+      eponymDateOfDeath: street.eponym_date_of_death,
+      eponymPlaceOfBirth: street.eponym_place_of_birth,
+      eponymPlaceOfDeath: street.eponym_place_of_death,
+      eponymDescription: street.eponym_description,
+      imagePath: street.image_path,
+      tags: street.tags
+}))
+
 const Map: FC<MapProps> = ({ streets, filters }: MapProps) => {
   const [isClient, setIsClient] = useState(false);
   const mapDimensions = { height: '100%', width: '100%' };
@@ -95,8 +116,11 @@ const filteredData = streets.filter((street) => {
                       <h3 className="font-semibold text-sm">{street.name}</h3>
                     </div>
                   </div>
+
+                  {/* add back later!!! */}
+
                   {/* birth/death details not filled out yet */}
-                  {!street.eponymDateOfBirth &&
+                  {/* {!street.eponymDateOfBirth &&
                     !street.eponymPlaceOfBirth &&
                     !street.eponymDateOfDeath &&
                     !street.eponymPlaceOfDeath && (
@@ -105,7 +129,7 @@ const filteredData = streets.filter((street) => {
                       </p>
                     )}
                   {/* person is still living (only in 2 cases, I think!) */}
-                  {street.eponymDateOfBirth &&
+                  {/* {street.eponymDateOfBirth &&
                     street.eponymPlaceOfBirth &&
                     !street.eponymDateOfDeath &&
                     !street.eponymPlaceOfDeath && (
@@ -116,21 +140,21 @@ const filteredData = streets.filter((street) => {
                       </p>
                     )}
                   {/* happy path */}
-                  {checkAllEponymValuesTrue(street) && (
+                  {/* {checkAllEponymValuesTrue(street) && (
                     <p className="text-xs text-bold text-gray-600">
                       Named after {street.eponymName},{' '}
                       {street.eponymDateOfBirth} ({street.eponymPlaceOfBirth}) -{' '}
                       {street.eponymDateOfDeath} ({street.eponymPlaceOfDeath})
                     </p>
-                  )}
+                  )} */}
                   {/* description is available */}
-                  {street.eponymDescription && (
+                  {/* {street.eponymDescription && (
                     <p className="text-xs text-gray-600 mb-2">
                       {parse(String(street.eponymDescription))}
                     </p>
                   )}
                   {/* image is available */}
-                  {street.imagePath && <img src={street.imagePath}></img>}
+                  {/* {street.imagePath && <img src={street.imagePath}></img>} */}
                 </div>
               </Popup>
             </Marker>
