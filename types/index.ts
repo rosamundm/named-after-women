@@ -26,8 +26,23 @@ export type Tag =
   'other' |
   'all'
 
+export interface UpstreamStreet {
+  name: string;
+  slug: string;
+  district: District;
+  geocode: [number, number];
+  entry_complete: boolean;
+  eponym_name: string;
+  eponym_date_of_birth?: string | null;
+  eponym_date_of_death?: string | null;
+  eponym_place_of_birth?: string | null;
+  eponym_place_of_death?: string | null;
+  eponym_description?: string | React.JSX.Element | React.JSX.Element[]; // used because of html-react-parse
+  image_path?: string | null;
+  tags?: Tag[];
+}
+
 export interface Street {
-  externalId?: number;
   name: string;
   slug: string;
   district: District;
