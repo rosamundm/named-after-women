@@ -1,9 +1,4 @@
 import { FC } from 'react';
-import { promises as fs } from 'fs';
-import path from 'path';
-import Map from '@/components/ui/map/map';
-import { Street } from '@/types';
-
 import {
   Card,
   CardContent,
@@ -14,9 +9,22 @@ import {
 import WelcomeDialog from '@/components/ui/welcome-dialog';
 import MapWrapper from '@/components/ui/map/map-wrapper';
 import { getStreets } from '@/data/fetch';
+import { Street } from '@/types';
 
 const Home: FC = async () => {
-  const streets = await getStreets();
+  let streets: Street[] = []
+  let error = null
+
+  try {
+    streets = await getStreets()
+  } catch (err) {
+    error = err instanceof Error ? err.message : 'Failed to load streets'
+    console.error(error)
+  }
+
+  if (error) {
+    return <div>Error loading streets: {error}</div>
+  }
 
   return (
     <div className="min-h-screen bg-background">
