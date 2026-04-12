@@ -1,11 +1,4 @@
 import { Street, UpstreamStreet } from '@/types';
-import { greenMarker, redMarker } from '@/components/ui/map/map-markers';
-
-export const getMarker = (street: Street) => {
-  let marker = greenMarker;
-  if (!street.imagePath) marker = redMarker;
-  return marker;
-};
 
 export const camelizeStreetProps = (streets: UpstreamStreet[]): Street[] => 
   streets.map((street: UpstreamStreet) =>

@@ -59,7 +59,7 @@ export interface Street {
 }
 
 export interface MapProps {
-  streets: Street[];
+  streets: UpstreamStreet[];
   filters: {
     tag: Tag;
     district: District;
