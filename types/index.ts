@@ -28,7 +28,6 @@ export type Tag =
 
 export interface UpstreamStreet {
   name: string;
-  slug: string;
   district: District;
   geocode: [number, number];
   entry_complete: boolean;
@@ -37,14 +36,13 @@ export interface UpstreamStreet {
   eponym_date_of_death?: string | null;
   eponym_place_of_birth?: string | null;
   eponym_place_of_death?: string | null;
-  eponym_description?: string | React.JSX.Element | React.JSX.Element[]; // used because of html-react-parse
+  eponym_description?: string;
   image_path?: string | null;
   tags?: Tag[];
 }
 
 export interface Street {
   name: string;
-  slug: string;
   district: District;
   geocode: [number, number];
   entryComplete: boolean;

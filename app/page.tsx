@@ -11,6 +11,9 @@ import MapWrapper from '@/components/ui/map/map-wrapper';
 import { getStreets } from '@/data/fetch';
 import { Street } from '@/types';
 
+// configuration for reloading data from Supabase every hour
+export const revalidate = 3600
+
 const Home: FC = async () => {
   let streets: Street[] = []
   let error = null

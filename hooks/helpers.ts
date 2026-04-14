@@ -4,7 +4,6 @@ export const camelizeStreetProps = (streets: UpstreamStreet[]): Street[] =>
   streets.map((street: UpstreamStreet) =>
     ({
       name: street.name,
-      slug: street.slug,
       district: street.district,
       geocode: street.geocode,
       entryComplete: street.entry_complete,

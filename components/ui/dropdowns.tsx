@@ -72,7 +72,7 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                                     focus:outline-none
                                 `}>
                                     <Select.ItemText>
-                                        Tag filtering coming soon!
+                                        Tag filtering coming back soon!
                                     </Select.ItemText>
                                 </Select.Item>
 
