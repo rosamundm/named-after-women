@@ -72,11 +72,11 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                                     focus:outline-none
                                 `}>
                                     <Select.ItemText>
-                                        Tag filtering coming back soon!
+                                        All tags
                                     </Select.ItemText>
                                 </Select.Item>
 
-                                    {/* {tagNames.map((tagName, index) => (
+                                    {tagNames.map((tagName, index) => (
                                         <Select.Item
                                             key={index}
                                             value={tagName}
@@ -89,7 +89,7 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                                                 <CheckIcon />
                                             </Select.ItemIndicator>
                                         </Select.Item>
-                                    ))} */}
+                                    ))}
                             </Select.Viewport>
                         </Select.Content>
                     </Select.Portal>
