@@ -20,7 +20,7 @@ export type Tag =
   'music, film, theatre' |
   'resistance' |
   'politics & activism' |
-  'science' |
+  'sciences & engineering' |
   'education' |
   'international' |
   'other' |
