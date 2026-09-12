@@ -22,6 +22,7 @@ export type Tag =
   'politics & activism' |
   'sciences & engineering' |
   'education' |
+  'sports' |
   'international' |
   'other' |
   'all'
