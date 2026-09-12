@@ -24,6 +24,7 @@ export type Tag =
   'education' |
   'sports' |
   'international' |
+  'aristocracy' |
   'other' |
   'all'
 

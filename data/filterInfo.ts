@@ -53,6 +53,11 @@ export const getTagInfo = (streets: Street[]) => (
             count: getTagCount('international', streets),
         },
         {
+            name: 'aristocracy',
+            descriptiveName: 'aristocracy',
+            count: getTagCount('aristocracy', streets),
+        },
+        {
             name: 'other',
             descriptiveName: 'other',
             count: getTagCount('other', streets),
