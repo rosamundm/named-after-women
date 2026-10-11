@@ -2,8 +2,6 @@ import { FC } from 'react';
 
 const getWebsite = (): string | undefined => process.env.WEBSITE;
 
-console.log("getWebsite:", getWebsite())
-
 const AboutPage: FC = () => {
   return (
     <div className="min-h-screen bg-background">
