@@ -17,6 +17,10 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground max-w-xs">
               mapping out women's history in berlin's streets
             </p>
+            <p className="text-sm text-muted-foreground max-w-xs">
+              this website doesn't collect your data, so you don't need to agree to
+              anything. yay!
+            </p>
           </div>
 
           <div className="space-y-4">

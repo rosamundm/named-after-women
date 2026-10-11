@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/primitives/card';
-import WelcomeDialog from '@/components/ui/welcome-dialog';
 import MapWrapper from '@/components/ui/map/map-wrapper';
 import { getStreets } from '@/data/fetch';
 import { Street } from '@/types';
@@ -34,7 +33,6 @@ const Home: FC = async () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-between items-start mb-8">
           <div className="text-center flex-1">
-            <WelcomeDialog />
             <h1 className="text-4xl font-bold tracking-tight mb-4">
               named after women
             </h1>
