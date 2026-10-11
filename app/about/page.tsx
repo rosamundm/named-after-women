@@ -1,5 +1,9 @@
 import { FC } from 'react';
 
+const getWebsite = (): string | undefined => process.env.WEBSITE;
+
+console.log("getWebsite:", getWebsite())
+
 const AboutPage: FC = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -78,7 +82,7 @@ const AboutPage: FC = () => {
             About the creator
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            <a href="https://www.rosamundmather.com/"><u>My name is Rosamund</u></a>.
+            <a href={getWebsite()}><u>My name is Rosamund</u></a>.
             I'm a Berlin-based software developer with a background in translation and
             writing, originally from the UK. I've always been obsessed with maps and
             streets, even designing my own towns as a kid...
