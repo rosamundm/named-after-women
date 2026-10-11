@@ -90,11 +90,12 @@ const ColophonPage: FC = () => {
             Women.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            So in May 2025, I made the decision to turn the site static. This
-            involves some initial overhead, but it's a massive relief in terms
-            of cost, performance, maintainability, and security. It is a bit of
-            a shame to move the project away from my beloved Django, but there
-            are plenty of other opportunities to use it!
+            In May 2025, I made the decision to do a technical overhaul and
+            turn the site into a more static monorepo, which has been a relief in terms
+            of cost, performance, maintainability, and security.
+            The street data is now queried from a Supabase instance, and the site itself
+            is hosted on Vercel, both of which are in AWS EU-West-1 (long-term, I hope
+            to find an alternative solution).
           </p>
           <h2 className="text-xl font-bold mb-4">AI transparency note:</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -102,7 +103,7 @@ const ColophonPage: FC = () => {
             <a href="https://v0.dev/">
               <u>v0</u>
             </a>{' '}
-            to bootstrap the basic layout of the new site to save myself the
+            to bootstrap the basic layout of the 2025 site to save myself the
             headache of designing something to my specifications from scratch,
             enabling me to focus my energies on other aspects. I then made a
             whole lot of corrections and customisations to the code myself (e.g.
@@ -110,11 +111,10 @@ const ColophonPage: FC = () => {
             the previous site).
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            My overall stance on generative AI remains staunchly critical, primarily for sociopolitical
-            and environmental reasons. Yet as someone earning a living as a developer, I've
-            accepted that I don't have the option of staying totally out of its way. What I can
-            do, however, is endeavour to keep it out of my own projects, where I have more freedom
-            to follow my personal ethics.
+            For a variety of reasons, my overall stance on generative AI remains staunchly critical.
+            At the same time, due to my employment as a developer, I don't currently have the option of 
+            staying totally out of its way. What I can do, however, is take pains to keep it out of
+            my personal projects, where I have more freedom to adhere to my own ethics.
           </p>
         </main>
       </div>
