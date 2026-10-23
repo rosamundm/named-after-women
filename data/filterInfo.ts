@@ -65,7 +65,7 @@ export const getTagInfo = (streets: Street[]) => (
     ]
 )
 
-export const districtNames = [
+export const boroughNames = [
     'Charlottenburg-Wilmersdorf',
     'Friedrichshain-Kreuzberg',
     'Lichtenberg',

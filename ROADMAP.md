@@ -1,0 +1,3 @@
+- Add tags to all entries for more complete filtering
+- Add filter for decade/era
+- Add text search filter

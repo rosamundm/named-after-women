@@ -7,17 +7,17 @@ import { useTheme } from 'next-themes';
 import * as Select from '@radix-ui/react-select';
 import { CheckIcon, ChevronDownIcon } from '@radix-ui/react-icons';
 
-import { District, Street, Tag } from '@/types';
-import { districtNames, getTagInfo } from '@/data/filterInfo';
+import { Borough, Street, Tag } from '@/types';
+import { boroughNames, getTagInfo } from '@/data/filterInfo';
 
 type Filters = {
     tag: Tag;
-    district: District;
+    district: Borough;  // todo: change to "borough" if/when column name changes
 }
 
 export interface DropdownState {
   tag: Tag;
-  district: District;
+  district: Borough;  // todo: change to "borough" if/when column name changes
 }
 
 interface DropdownGroupProps { 
@@ -100,11 +100,11 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
             <div className="flex-1">
                 <Select.Root
                     value={filters?.district || 'all'}
-                    onValueChange={(value) => handleFilterChange('district', value as District)}
+                    onValueChange={(value) => handleFilterChange('district', value as Borough)}
                     max-w
                 >
                     <Select.Trigger className="flex items-center justify-between w-full px-3 py-2 border rounded">
-                        <Select.Value placeholder="All districts" />
+                        <Select.Value placeholder="All boroughs" />
                         <Select.Icon>
                             <ChevronDownIcon />
                         </Select.Icon>
@@ -119,18 +119,18 @@ export const DropdownGroup: FC<DropdownGroupProps> = ({ data, filters, setFilter
                                     ${theme === "dark" ? "hover:bg-violet-500" : "hover:bg-violet-300"}
                                     focus:outline-none
                                 `}>
-                                    <Select.ItemText>All districts</Select.ItemText>
+                                    <Select.ItemText>All boroughs</Select.ItemText>
                                 </Select.Item>
 
-                                    {districtNames.map((district, index) => (
+                                    {boroughNames.map((borough, index) => (
                                         <Select.Item
                                             key={index}
-                                            value={district}
+                                            value={borough}
                                             className={`flex items-center justify-between px-3 py-2
                                                 ${theme === "dark" ? "hover:bg-violet-500" : "hover:bg-violet-300"}
                                                 focus:outline-none
                                         `}>
-                                            <Select.ItemText>{district}</Select.ItemText>
+                                            <Select.ItemText>{borough}</Select.ItemText>
                                             <Select.ItemIndicator>
                                                 <CheckIcon />
                                             </Select.ItemIndicator>

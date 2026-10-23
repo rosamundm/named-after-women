@@ -1,4 +1,4 @@
-export type District =
+export type Borough =
   'Charlottenburg-Wilmersdorf' |
   'Friedrichshain-Kreuzberg' |
   'Lichtenberg' |
@@ -30,7 +30,7 @@ export type Tag =
 
 export interface UpstreamStreet {
   name: string;
-  district: District;
+  district: Borough;
   geocode: [number, number];
   entry_complete: boolean;
   eponym_name: string;
@@ -45,7 +45,7 @@ export interface UpstreamStreet {
 
 export interface Street {
   name: string;
-  district: District;
+  district: Borough;
   geocode: [number, number];
   entryComplete: boolean;
   eponymName: string;
@@ -59,10 +59,10 @@ export interface Street {
 }
 
 export interface MapProps {
-  streets: UpstreamStreet[];
+  streets: Street[];
   filters: {
     tag: Tag;
-    district: District;
+    district: Borough;
   }
 }
 
