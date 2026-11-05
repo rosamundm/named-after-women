@@ -111,10 +111,12 @@ const ColophonPage: FC = () => {
             the previous site).
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            For a variety of reasons, my overall stance on generative AI remains staunchly critical.
-            At the same time, due to my employment as a developer, I don't currently have the option of 
-            staying totally out of its way. What I can do, however, is take pains to keep it out of
-            my personal projects, where I have more freedom to adhere to my own ethics.
+            Above anything else, Named After Women is a project of passion. That includes
+            the fact that I have spent many days and evenings researching and cracking codes
+            that would get parts of the website to work, which has brought its own brand of satisfaction.
+            In order to continue in this spirit of sticking with my own direction and ethics as closely as
+            possible, I would like to draw a boundary and keep the generative AI technologies that I use in
+            my daily employment as a developer away from this project.
           </p>
         </main>
       </div>
